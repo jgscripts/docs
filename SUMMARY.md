@@ -78,6 +78,7 @@
 * [ESX Guides](advanced-garages/esx-guides/README.md)
   * [Vehicle Labels](advanced-garages/esx-guides/vehicle-labels.md)
 * [Changelog](advanced-garages/changelog/README.md)
+  * [v2.2.8](advanced-garages/changelog/v2.2.8.md)
   * [v2.2.7](advanced-garages/changelog/v2.2.7.md)
   * [v2.2.6](advanced-garages/changelog/v2.2.6.md)
   * [v2.2.5](advanced-garages/changelog/v2.2.5.md)
