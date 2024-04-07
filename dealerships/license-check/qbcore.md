@@ -9,37 +9,41 @@ Firstly you will need to add the following to each dealership in the config.lua
 {% endhint %}
 
 ```lua
-license = false, -- this will mean the dealership doesnt require a license to open
-license = 'boat', -- this is how to make it require a license name/type to open 
+licenseCheck = false, -- false = no license required to open dealership
+license = 'driver', -- this is the license name required 
 ```
 
 {% hint style="info" %}
-You will need to replace the following function in config-sv.lua "jg-dealerships:server:showroom-pre-check"
+You will need to replace the following function in config-sv.lua\
+&#x20;"jg-dealerships:server:showroom-pre-check"
 {% endhint %}
 
 ```lua
 Framework.Server.CreateCallback("jg-dealerships:server:showroom-pre-check", function(src, cb, dealershipId)
   local allowed = false
-
+  
   -- QBCORE LICENSE CHECKS
   local Player = QBCore.Functions.GetPlayer(src)
+  local licenseCheck = Config.DealershipLocations[dealershipId].licenseCheck
   local license = Player.PlayerData.metadata['licences'][Config.DealershipLocations[dealershipId].license]
-  if Config.DealershipLocations[dealershipId].license then
-    allowed = true
+  if licenseCheck then
     if not license then
       allowed = false
+
+    elseif license  then
+      allowed = true
     end
-  elseif not Config.DealershipLocations[dealershipId].license then
+  else
     allowed = true
   end
-
+  
   -- Write some server-sided code here. Again, update the "allowed" variable
-
+  
   if not allowed then
-    Framework.Server.Notify(src, "You are not allowed to access the showroom", "error")
+    Framework.Server.Notify(src, "You require a ".. Config.DealershipLocations[dealershipId].license.. " license", "error")
     return cb({ error = true })
   end
-
+  
   return cb()
 end)
 ```
@@ -65,7 +69,7 @@ Framework.Server.CreateCallback("jg-dealerships:server:showroom-pre-check", func
   -- Write some server-sided code here. Again, update the "allowed" variable
 
   if not allowed then
-    Framework.Server.Notify(src, "You are not allowed to access the showroom", "error")
+    Framework.Server.Notify(src, "You require a ".. Config.DealershipLocations[dealershipId].license.. " license", "error")
     return cb({ error = true })
   end
 
