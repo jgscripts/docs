@@ -3,16 +3,24 @@
 ## Installation
 
 1. Unzip the `jg-mechanic-bundle`&#x20;
-2.  Drag all 4 folders (`jg-mechanic`, `jg-mechanic-props`, `jg-vehiclemileage` and `jg-textui`) into a new folder called `[jg]` within your server's `resources` folder.
+2. Drag all 4 folders (`jg-mechanic`, `jg-mechanic-props`, `jg-vehiclemileage` and `jg-textui`) into a new folder called `[jg]` within your server's `resources` folder.
 
-    > _If you don't plan on using our new default Text UI, you don't need to transfer it to your server, and you can choose a different Text UI script in the config!_
+{% hint style="info" %}
+If you don't plan on using our new default Text UI, you don't need to transfer it to your server, and you can choose a different Text UI script in the config!
+{% endhint %}
+
 3. Inside of your `server.cfg`, add a new line **after** all your other resources have started:
 
 ```
 ensure [jg]
 ```
 
-4. Now head into the `install` folder within `jg-mechanic`. In here were are going to modify your database & setup your inventory. Start by running the `database/run.sql` file within your database software (could be phpmyadmin or HeidiSQL). **Make sure you are running this SQL code within the correct database - triple check!**
+4. Now head into the `install` folder within `jg-mechanic`. In here were are going to modify your database & setup your inventory. Start by running the `database/run.sql` file within your database software (could be phpmyadmin or HeidiSQL).
+
+{% hint style="danger" %}
+Make sure you are running this SQL code within the correct database - triple check and cross reference the name of the database!
+{% endhint %}
+
 5. Now navigate into the `inventory` folder. You will need to follow a different guide depending on your chosen inventory. The item images can be found in the `images` folder.
    * ox\_inventory
    * qb-inventory
