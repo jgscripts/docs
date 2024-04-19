@@ -5,6 +5,11 @@
 * [FiveM Escrow Errors](fivem-escrow-errors.md)
 * [Permissions Troubleshooting](permissions-troubleshooting.md)
 
+## 🛠️ Mechanic
+
+* [Introduction](mechanic/introduction.md)
+* [Installation & Configuration](mechanic/installation-and-configuration.md)
+
 ## 🚘 Dealerships
 
 * [Introduction](dealerships/introduction.md)
