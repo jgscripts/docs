@@ -6,7 +6,7 @@ description: Sam's ultimate guide
 
 `/admincar` is a commonly used command in QBCore that allows admins to add a spawned in vehicle to their owned vehicles. What is even more common though is this error:
 
-<figure><img src="../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2) (1).png" alt=""><figcaption></figcaption></figure>
 
 There is a few mistakes that can make it so you can't own vehicles in QBCore. This guide will explain everything that is potentially wrong, and help you fix it.
 

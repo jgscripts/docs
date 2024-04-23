@@ -1,5 +1,14 @@
 # Introduction
 
-Work in progress. It's a pretty cool script, I promise :)
+The ultimate FiveM mechanic script.
 
-Showcase video will go here.
+## Store
+
+Learn more: \[coming soon]&#x20;
+
+Store: [https://store.jgscripts.com/package/6212526](https://store.jgscripts.com/package/6212526)
+
+## Showcase
+
+{% embed url="https://www.youtube.com/watch?v=Zvxozmq3huc" %}
+

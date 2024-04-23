@@ -1,6 +1,6 @@
 # Installation & Configuration
 
-## Installation
+Installation
 
 1. Unzip the `jg-mechanic-bundle`&#x20;
 2. Drag all 4 folders (`jg-mechanic`, `jg-mechanic-props`, `jg-vehiclemileage` and `jg-textui`) into a new folder called `[jg]` within your server's `resources` folder.
@@ -25,6 +25,84 @@ Make sure you are running this SQL code within the correct database - triple che
    * ox\_inventory
    * qb-inventory
    * esx\_inventory
+
+## Saving Vehicle Modifications
+
+{% hint style="success" %}
+Using [JG Advanced Garages](https://jgscripts.com/scripts/advanced-garages)? Skip this section, you're good to go, all vehicle modifications will be saved automatically with no configuration required if using **v2.2.8 or newer**!
+{% endhint %}
+
+JG Mechanic uses your "vehicle properties" to save changes made your vehicle while using the script. Vehicle properties are typically stored in your player owned vehicles database table table, under a column such as `mods` or `vehicle`.
+
+To make things simple we have created **2 replacement exports** for getting and setting these vehicle properties. If using QBCore or ESX, we can replace them in your core to keep things simple.
+
+<details>
+
+<summary><strong>QBCore</strong></summary>
+
+1. Navigate to `[qb]/qb-core/client/functions.lua` and locate the 2 functions:
+
+```lua
+QBCore.Functions.GetVehicleProperties(vehicle)
+```
+
+```lua
+QBCore.Functions.SetVehicleProperties(vehicle, props)
+```
+
+2. These are two very large functions - but we are going to _entirely_ replace them. A life hack is on VSCode, you can collapse them with the little arrow near the line numbers to make it easy to delete them.
+
+<img src="../.gitbook/assets/image.png" alt="" data-size="original">
+
+3. Replace these 2 functions with the following new code:
+
+```lua
+function QBCore.Functions.GetVehicleProperties(vehicle)
+    return exports["jg-mechanic"]:getVehicleProperties(vehicle)
+end
+
+function QBCore.Functions.SetVehicleProperties(vehicle, props)
+    exports["jg-mechanic"]:setVehicleProperties(vehicle, props)
+end
+```
+
+You may be concerned about how much code you have removed. No need to worry: you can re-get this code from the QBCore GitHub at any time, and all the functionality has been replaced for you directly inside JG Mechanic. Now do a full server restart and you're ready to go!
+
+</details>
+
+<details>
+
+<summary><strong>ESX</strong></summary>
+
+1. Navigate to `[core]/es_extended/client/functions.lua` and locate the 2 functions:
+
+```lua
+function ESX.Game.GetVehicleProperties(vehicle)
+```
+
+```lua
+function ESX.Game.SetVehicleProperties(vehicle, props)
+```
+
+2. These are two very large functions - but we are going to _entirely_ replace them. A life hack is on VSCode, you can collapse them with the little arrow near the line numbers to make it easy to delete them.
+
+<img src="../.gitbook/assets/image (1).png" alt="" data-size="original">
+
+3. Replace these 2 functions with the following new code:
+
+```lua
+function ESX.Game.GetVehicleProperties(vehicle)
+    return exports["jg-mechanic"]:getVehicleProperties(vehicle)
+end
+
+function ESX.Game.SetVehicleProperties(vehicle, props)
+    exports["jg-mechanic"]:setVehicleProperties(vehicle, props)
+end
+```
+
+You may be concerned about how much code you have removed. No need to worry: you can re-get this code from the ESX GitHub at any time, and all the functionality has been replaced for you directly inside JG Mechanic. Now do a full server restart and you're ready to go!
+
+</details>
 
 ## Configuration
 
