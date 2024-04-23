@@ -8,7 +8,11 @@
 ## 🛠️ Mechanic
 
 * [Introduction](mechanic/introduction.md)
-* [Installation & Configuration](mechanic/installation-and-configuration.md)
+* [Installation & Configuration](mechanic/installation-and-configuration/README.md)
+  * [ox\_inventory](mechanic/installation-and-configuration/ox\_inventory.md)
+  * [qb-inventory](mechanic/installation-and-configuration/qb-inventory.md)
+  * [esx\_inventory](mechanic/installation-and-configuration/esx\_inventory.md)
+* [Inventory Items](mechanic/inventory-items.md)
 
 ## 🚘 Dealerships
 
