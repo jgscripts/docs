@@ -12,3 +12,8 @@ Store: [https://store.jgscripts.com/package/6212526](https://store.jgscripts.com
 
 {% embed url="https://www.youtube.com/watch?v=Zvxozmq3huc" %}
 
+## Installation & Configuration
+
+{% content-ref url="installation-and-configuration/" %}
+[installation-and-configuration](installation-and-configuration/)
+{% endcontent-ref %}
