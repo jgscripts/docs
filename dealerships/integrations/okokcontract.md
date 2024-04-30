@@ -9,8 +9,11 @@ Please note you will need to change the table name depending on your framework\
 \
 If ESX then table name is "owned\_vehicles"\
 \
-If QBCORE then table name is "player\_vehicles"
+If QBCORE then table name is "player\_vehicles"\
+
 {% endhint %}
+
+The Function Below can be found in the OKOKContract Resource
 
 ```lua
 function canVehicleBeSold(source, plate)
