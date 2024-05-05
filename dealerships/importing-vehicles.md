@@ -1,6 +1,7 @@
 # Importing Vehicles
 
-Type `/dealeradmin` into chat, click vehicles, and then the yellow import button on the top right.
+> [!CAUTION]
+> Type `/dealeradmin` into chat, click vehicles, and then the yellow import button on the top right.
 
 #### QB
 
