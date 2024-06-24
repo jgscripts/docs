@@ -18,9 +18,9 @@ By setting a state bag on the server created entity with a table of all the vehi
 
 The problem from earlier still stands though. "_The entity owner can change. Randomly. As quickly as a tick."_ This means that on populated servers, where a lot of vehicles are being spawned, and there are a lot of clients nearby, it can be almost impossible to get a client to reliably set vehicle properties. Vehicles will therefore commonly take a long time to successfully create as the entity owner bounces around, or vehicles simply spawn with the wrong vehicle properties and server owners, rightfully, get ignored.
 
-This isn't a problem on quiet servers, with up to maybe, 25 people. For some reason JG Advanced Garages become popular, and was being used on servers with hundreds of active players, and people started to really complain about the reliability of our script, and why it doesn't work like X garage script (which just spawns vehicles on the client).
+This isn't a problem on quiet servers, with up to maybe, 25 people. For some reason, Advanced Garages became popular, and was being used on servers with hundreds of active players, and a lot of people started to complain about the reliability of our script. "Why it doesn't work like XYZ garage script", or "I'm switching to XYZ garage because yours is terrible" (which just spawns vehicles on the client).
 
-Therefore, by default, we don't use `CreateVehicleServerSetter`, and you have to enable it by setting:
+Therefore, by default, we don't use `CreateVehicleServerSetter`. You have to enable it by setting:
 
 ```lua
 Config.SpawnVehiclesWithServerSetter = true
