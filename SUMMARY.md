@@ -63,6 +63,8 @@
 * [Vehicle Images](advanced-garages/vehicle-images.md)
 * [Languages](advanced-garages/languages.md)
 * [Garage Events](advanced-garages/garage-events.md)
+* [Misc](advanced-garages/misc/README.md)
+  * [Why are you not using CreateVehicleServerSetter by default?](advanced-garages/misc/why-are-you-not-using-createvehicleserversetter-by-default.md)
 * [Troubleshooting](advanced-garages/troubleshooting/README.md)
   * [Vehicle Spawning](advanced-garages/troubleshooting/vehicle-spawning.md)
   * [Execution of native... SetDriftTyresEnabled error](advanced-garages/troubleshooting/execution-of-native...-setdrifttyresenabled-error.md)
