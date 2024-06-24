@@ -1,6 +1,10 @@
 # Brazzers-FakePlate
 
-
+{% hint style="warning" %}
+This guide is for v2 only. Brazzers-FakePlate is **integrated by default in v3!**\
+\
+This article will be removed shortly after the release of v3.
+{% endhint %}
 
 {% hint style="info" %}
 This code was provided to us by IgnoranceIsBliss. &#x20;

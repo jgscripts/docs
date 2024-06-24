@@ -66,7 +66,6 @@
 * [Misc](advanced-garages/misc/README.md)
   * [Why are you not using CreateVehicleServerSetter by default?](advanced-garages/misc/why-are-you-not-using-createvehicleserversetter-by-default.md)
 * [Troubleshooting](advanced-garages/troubleshooting/README.md)
-  * [Vehicle Spawning](advanced-garages/troubleshooting/vehicle-spawning.md)
   * [Execution of native... SetDriftTyresEnabled error](advanced-garages/troubleshooting/execution-of-native...-setdrifttyresenabled-error.md)
   * [ucrtbase.dll!strcmp crash](advanced-garages/troubleshooting/ucrtbase.dll-strcmp-crash.md)
   * [SQL error: foreign key constraint fails](advanced-garages/troubleshooting/sql-error-foreign-key-constraint-fails.md)
