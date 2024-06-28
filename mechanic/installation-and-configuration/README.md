@@ -52,7 +52,7 @@ QBCore.Functions.SetVehicleProperties(vehicle, props)
 
 2. These are two very large functions - but we are going to _entirely_ replace them. A life hack is on VSCode, you can collapse them with the little arrow near the line numbers to make it easy to delete them.
 
-<img src="../../.gitbook/assets/image.png" alt="" data-size="original">
+<img src="../../.gitbook/assets/image (1).png" alt="" data-size="original">
 
 3. Replace these 2 functions with the following new code:
 
@@ -86,7 +86,7 @@ function ESX.Game.SetVehicleProperties(vehicle, props)
 
 2. These are two very large functions - but we are going to _entirely_ replace them. A life hack is on VSCode, you can collapse them with the little arrow near the line numbers to make it easy to delete them.
 
-<img src="../../.gitbook/assets/image (1).png" alt="" data-size="original">
+<img src="../../.gitbook/assets/image (1) (1).png" alt="" data-size="original">
 
 3. Replace these 2 functions with the following new code:
 

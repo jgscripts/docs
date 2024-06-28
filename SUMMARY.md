@@ -28,6 +28,7 @@
 * [Dealership Locations](dealerships/dealership-locations.md)
 * [Employees](dealerships/employees.md)
 * [Plate Format](dealerships/plate-format.md)
+* [Vehicle Images](dealerships/vehicle-images.md)
 * [Commands](dealerships/commands.md)
 * [Languages](dealerships/languages.md)
 * [Integrations](dealerships/integrations/README.md)
