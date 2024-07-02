@@ -19,9 +19,9 @@ You will need to replace the following function in config-sv.lua\
 {% endhint %}
 
 ```lua
-Framework.Server.CreateCallback("jg-dealerships:server:showroom-pre-check", function(src, cb, dealershipId)
+lib.callback.register("jg-dealerships:server:showroom-pre-check", function(src, dealershipId)
   local allowed = false
-  
+
   -- QBCORE LICENSE CHECKS
   local Player = QBCore.Functions.GetPlayer(src)
   local licenseCheck = Config.DealershipLocations[dealershipId].licenseCheck
@@ -36,15 +36,15 @@ Framework.Server.CreateCallback("jg-dealerships:server:showroom-pre-check", func
   else
     allowed = true
   end
-  
+
   -- Write some server-sided code here. Again, update the "allowed" variable
-  
+
   if not allowed then
     Framework.Server.Notify(src, "You require a ".. Config.DealershipLocations[dealershipId].license.. " license", "error")
-    return cb({ error = true })
+    return false
   end
-  
-  return cb()
+
+  return true
 end)
 ```
 
@@ -53,7 +53,8 @@ Only want to setup individual dealerships and not all you can replace config-sv 
 {% endhint %}
 
 ```lua
-Framework.Server.CreateCallback("jg-dealerships:server:showroom-pre-check", function(src, cb, dealershipId)
+
+lib.callback.register("jg-dealerships:server:showroom-pre-check", function(src, dealershipId)
   local allowed = false
 
   -- QBCORE License Check
@@ -70,9 +71,9 @@ Framework.Server.CreateCallback("jg-dealerships:server:showroom-pre-check", func
 
   if not allowed then
     Framework.Server.Notify(src, "You require a ".. Config.DealershipLocations[dealershipId].license.. " license", "error")
-    return cb({ error = true })
+    return false
   end
 
-  return cb()
+  return true
 end)
 ```
