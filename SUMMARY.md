@@ -14,6 +14,7 @@
   * [esx\_inventory](mechanic/installation-and-configuration/esx\_inventory.md)
 * [Inventory Items](mechanic/inventory-items.md)
 * [Changelog](mechanic/changelog/README.md)
+  * [v1.0.10](mechanic/changelog/v1.0.10.md)
   * [v1.0.9](mechanic/changelog/v1.0.9.md)
   * [v1.0.8](mechanic/changelog/v1.0.8.md)
   * [v1.0.7](mechanic/changelog/v1.0.7.md)
@@ -24,7 +25,6 @@
   * [v1.0.3](mechanic/changelog/v1.0.3.md)
   * [v1.0.2](mechanic/changelog/v1.0.2.md)
   * [v1.0.1](mechanic/changelog/v1.0.1.md)
-* [v1.0.10](mechanic/v1.0.10.md)
 
 ## 🚘 Dealerships
 
