@@ -6,4 +6,4 @@ Employees can be one of three ranks: Manager, Supervisor or Sales. You cannot ch
 
 Here is the permissions breakdown:
 
-<figure><img src="../.gitbook/assets/image (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>

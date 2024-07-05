@@ -4,6 +4,7 @@
 * [Claim Purchase](claim-purchase.md)
 * [FiveM Escrow Errors](fivem-escrow-errors.md)
 * [Permissions Troubleshooting](permissions-troubleshooting.md)
+* [Translations](translations.md)
 
 ## 🛠️ Mechanic
 

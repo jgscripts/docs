@@ -6,7 +6,7 @@ Only available in Dealerships v1.2 or newer
 
 You can now show little vehicle thumbnails inside of the Dealerships UI, as you can see below. This will automatically stay up to date with the latest DLC vehicles.
 
-<figure><img src="../.gitbook/assets/image.png" alt=""><figcaption><p>Vehicle thumbnails in showroom list</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption><p>Vehicle thumbnails in showroom list</p></figcaption></figure>
 
 To enable this feature, set `Config.ShowVehicleImages = true`
 
