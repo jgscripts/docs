@@ -1,10 +1,13 @@
 # ps-housing
 
+{% hint style="warning" %}
+This guide has been updated for, and now only works with, **Advanced Garages v3.0 or newer.**
+{% endhint %}
+
 Open up `ps-housing/client/cl_property.lua`, find and replace these functions with this code:
 
 ```lua
 function Property:RegisterGarageZone()
-
     if not next(self.propertyData.garage_data) then return end
 
     if not (self.has_access or self.owner) then
@@ -42,9 +45,9 @@ function Property:RegisterGarageZone()
                 Wait(100)
                 inGarage = false
                 if IsPedInAnyVehicle(PlayerPedId(), true) then
-                    TriggerEvent('jg-advancedgarages:client:InsertVehicle', garageName, true)
+                    TriggerEvent('jg-advancedgarages:client:store-vehicle', garageName, "car")
                 else
-                    TriggerEvent('jg-advancedgarages:client:ShowHouseGarage:qs-housing', garageName, true)
+                    TriggerEvent('jg-advancedgarages:client:open-garage', garageName, "car", vec4(garageData.x, garageData.y, garageData.z, garageData.h))
                 end
             end
         end,
