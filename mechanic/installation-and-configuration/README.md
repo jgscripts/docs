@@ -26,7 +26,7 @@ Make sure you are running this SQL code within the correct database - triple che
    * qb-inventory
    * esx\_inventory
 
-## Saving Vehicle Modifications
+## Saving Vehicle Modifications (Recommended)
 
 {% hint style="success" %}
 Using [JG Advanced Garages](https://jgscripts.com/scripts/advanced-garages)? Skip this section, you're good to go, all vehicle modifications will be saved automatically with no configuration required if using **v2.2.8 or newer**!
