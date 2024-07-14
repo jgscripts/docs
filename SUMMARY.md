@@ -106,6 +106,7 @@
 * [ESX Guides](advanced-garages/esx-guides/README.md)
   * [Vehicle Labels](advanced-garages/esx-guides/vehicle-labels.md)
 * [Changelog](advanced-garages/changelog/README.md)
+  * [v3.0.4](advanced-garages/changelog/v3.0.4.md)
   * [v3.0.3](advanced-garages/changelog/v3.0.3.md)
   * [v3.0.2](advanced-garages/changelog/v3.0.2.md)
   * [v3.0.1](advanced-garages/changelog/v3.0.1.md)
