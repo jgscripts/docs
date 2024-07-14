@@ -15,6 +15,7 @@
   * [esx\_inventory](mechanic/installation-and-configuration/esx\_inventory.md)
 * [Inventory Items](mechanic/inventory-items.md)
 * [Changelog](mechanic/changelog/README.md)
+  * [v1.0.11](mechanic/changelog/v1.0.11.md)
   * [v1.0.10](mechanic/changelog/v1.0.10.md)
   * [v1.0.9](mechanic/changelog/v1.0.9.md)
   * [v1.0.8](mechanic/changelog/v1.0.8.md)
