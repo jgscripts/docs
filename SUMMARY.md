@@ -51,6 +51,7 @@
   * [okokContract](dealerships/integrations/okokcontract.md)
   * [qb-vehiclesales](dealerships/integrations/qb-vehiclesales.md)
 * [Changelog](dealerships/changelog/README.md)
+  * [v1.2.2](dealerships/changelog/v1.2.2.md)
   * [v1.2.1](dealerships/changelog/v1.2.1.md)
   * [v1.2](dealerships/changelog/v1.2.md)
   * [v1.1.9](dealerships/changelog/v1.1.9.md)
