@@ -69,7 +69,7 @@
   * [v1.0.2](dealerships/changelog/v1.0.2.md)
   * [v1.0.1](dealerships/changelog/v1.0.1.md)
 
-## 🚗 Advanced Garages v2 <a href="#advanced-garages" id="advanced-garages"></a>
+## 🚗 Advanced Garages v3 <a href="#advanced-garages" id="advanced-garages"></a>
 
 * [Introduction](advanced-garages/introduction.md)
 * [Installation & Configuration](advanced-garages/installation-and-configuration.md)

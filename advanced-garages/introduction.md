@@ -4,7 +4,7 @@ Hey there! Thanks so much for checking out Advanced Garages. We hope you will lo
 
 ### Demo Video
 
-{% embed url="https://www.youtube.com/watch?v=dRJJpQavaPY" %}
+{% embed url="https://youtu.be/9dU7TvwwviY" %}
 
 ### How to Claim Purchase
 

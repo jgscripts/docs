@@ -1,7 +1,7 @@
 # Migration from v1
 
 {% hint style="warning" %}
-Ignore this guide unless you are migrating from v1 of the resource!
+Ignore this guide unless you are migrating from **v1** of the resource!&#x20;
 {% endhint %}
 
 Thank you so much for continuing to use Advanced Garages. Your ongoing support is why we keep developing this script [🧡](https://emojipedia.org/apple/ios-14.5/orange-heart/)
