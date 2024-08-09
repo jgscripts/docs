@@ -6,7 +6,7 @@ description: Sam's ultimate guide
 
 `/admincar` is a commonly used command in QBCore that allows admins to add a spawned in vehicle to their owned vehicles. What is even more common though is this error:
 
-<figure><img src="../../.gitbook/assets/image (2) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (2) (1).png" alt=""><figcaption></figcaption></figure>
 
 There is a few mistakes that can make it so you can't own vehicles in QBCore. This guide will explain everything that is potentially wrong, and help you fix it.
 
@@ -18,7 +18,7 @@ First we will have a look at the vehicle itself. Browse to your vehicles files a
 * `handling.meta`
 * `vehicles.meta` Some vehicles may have more, but these are the main ones you will need to look at.
 
-<figure><img src="../../.gitbook/assets/image (8).png" alt=""><figcaption><p>Typical meta files found with an addon vehicle</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (8).png" alt=""><figcaption><p>Typical meta files found with an addon vehicle</p></figcaption></figure>
 
 Now to start off we will go over some fundementals. Your cars model name is the name of the model in the "Stream" section of your vehicles files. This will also be the vehicles in-game spawn code when it has been added. The name can be changed but this is not recommended as it needs to be changed in all "Data" files for it to work properly.
 

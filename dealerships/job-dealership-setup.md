@@ -1,8 +1,8 @@
 ---
-description: A template to help configure a whitelisted dealership
+description: A template to help configure a job dealership
 ---
 
-# Whitelist Dealership Setup
+# Job Dealership Setup
 
 Example is for Police Job!
 
