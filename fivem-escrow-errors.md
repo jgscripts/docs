@@ -13,11 +13,11 @@
 
 #### Solutions
 
+* **You are using FileZilla and files have been corrupted during transfer** - try using an alternative FTP client such as [WinSCP](https://winscp.net/eng/index.php)
+* You are transferring the folder to your server file by file — **you must upload the .zip file as-is** and then extract it **after** it has been transferred to your VPS
 * Your server version is too old, the minimum version is 4752
   * You can download updated server artifacts [here](https://runtime.fivem.net/artifacts/fivem/build\_server\_windows/master/)
   * ...or check out the official [FiveM guide](https://docs.fivem.net/docs/server-manual/setting-up-a-server/)
-* You are transferring the folder to your server file by file — you must upload the .zip file as-is and then extract it **after** it has been transferred to your VPS
-* You are using FileZilla and files have been corrupted during transfer - try using an alternative FTP client such as [WinSCP](https://winscp.net/eng/index.php)
 
 </details>
 
@@ -36,7 +36,7 @@
 * Try restarting your server
 * You are transferring the folder to your server file by file — you must upload the .zip file as-is and then extract it **after** it has been transferred to your VPS
 * You don't have `.fxap` file in the script folder - try installing the script again
-* You are using FileZilla and files have been corrupted during transfer - try using an alternative FTP client such as [WinSCP](https://winscp.net/eng/index.php)
+* You are using **File**Zilla and files have been corrupted during transfer - try using an alternative FTP client such as [WinSCP](https://winscp.net/eng/index.php)
 
 </details>
 
