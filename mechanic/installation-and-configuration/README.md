@@ -104,6 +104,53 @@ You may be concerned about how much code you have removed. No need to worry: you
 
 </details>
 
+<details>
+
+<summary><strong>Ox_Lib</strong></summary>
+
+1.  Navigate to `ox_lib\resource\vehicleProperties\client.lua` and locate the 2 functions:\
+
+
+    ```lua
+    function lib.getVehicleProperties(vehicle)
+    ```
+
+
+
+    ```lua
+    function lib.setVehicleProperties(vehicle, props, fixVehicle)
+    ```
+
+
+2. These are two very large functions - but we are going to _entirely_ replace them. A life hack is on VSCode, you can collapse them with the little arrow near the line numbers to make it easy to delete them.\
+   \
+   ![](<../../.gitbook/assets/image (24).png>)\
+
+3.  Replace these 2 functions with the following new code:\
+
+
+    ```lua
+    ---@param vehicle number
+    ---@return VehicleProperties?
+    function lib.getVehicleProperties(vehicle)
+        return exports["jg-mechanic"]:getVehicleProperties(vehicle)
+    end
+
+    ---@param vehicle number
+    ---@param props VehicleProperties
+    ---@param fixVehicle? boolean Fix the vehicle after props have been set. Usually required when adding extras.
+    ---@return boolean isEntityOwner True if the entity is networked and the client is the current entity owner.
+    function lib.setVehicleProperties(vehicle, props, fixVehicle)
+        exports["jg-mechanic"]:setVehicleProperties(vehicle, props)
+        return not NetworkGetEntityIsNetworked(vehicle) or NetworkGetEntityOwner(vehicle) == cache.playerId
+    end
+    ```
+
+    \
+    You may be concerned about how much code you have removed. No need to worry: you can re-get this code from the Overextended GitHub at any time, and all the functionality has been replaced for you directly inside JG Mechanic. Now do a full server restart and you're ready to go!
+
+</details>
+
 ## Configuration
 
 Now for the fun part! Let's get the script perfectly configured for your city. Inside of the `config` folder you will find 4 different configuration files.
