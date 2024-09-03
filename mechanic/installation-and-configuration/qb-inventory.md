@@ -1,3 +1,22 @@
 # qb-inventory
 
-Guide is a work in progress
+## Items
+
+1. Go to `jg-mechanic\install\inventory\qb-core-items.lua` and copy the whole list **without** `Config.Items = {` and `}` at line **3** and **53.**\
+
+2. Go to the bottom of`qb-core\shared\items.lua`\
+
+3. Paste all the items before the last `}`\
+   <img src="../../.gitbook/assets/image.png" alt="" data-size="original">
+
+## Images
+
+1. Go to `jg-mechanic\install\inventory\images` and copy all the images.\
+
+2. Locate the `qb-inventory\html\images` folder.\
+
+3. And paste all the images in there.
+
+\
+And now you are all set.\
+If you have any questions please use the mechanic chat or ticket.
