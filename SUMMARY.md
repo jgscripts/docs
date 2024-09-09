@@ -14,6 +14,7 @@
   * [qb-inventory](mechanic/installation-and-configuration/qb-inventory.md)
   * [esx\_inventory](mechanic/installation-and-configuration/esx\_inventory.md)
 * [Inventory Items](mechanic/inventory-items.md)
+* [Tuning](mechanic/tuning.md)
 * [Integrations](mechanic/integrations.md)
 * [Commands, Events & Exports](mechanic/commands-events-and-exports/README.md)
   * [Commands](mechanic/commands-events-and-exports/commands.md)
