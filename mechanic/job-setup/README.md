@@ -35,7 +35,7 @@ Out of the box, we support `"okokBanking"`, `"fd_banking"`, `"Renewed-Banking"`,
 Simply set `Config.SocietyBanking` to one of the systems above.
 
 {% hint style="warning" %}
-If you're using `esx_addonaccount` and experiencing errors, please try the following guide: [esx-framework-jobs.md](installation-and-configuration/esx-framework-jobs.md "mention")
+If you're using `esx_addonaccount` and experiencing errors, please try the following guide: [esx-framework-jobs.md](esx-framework-jobs.md "mention")
 {% endhint %}
 
 If you would like to use a custom society banking system, you will need to add the exports into the following server functions, found in `framework/sv-functions.lua`
