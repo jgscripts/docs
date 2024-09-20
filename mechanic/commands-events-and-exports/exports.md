@@ -20,7 +20,7 @@ Returns if a vehicle needs servicing.
 
 ```lua
 -- plate: string
--- returns: true/false
+-- returns: boolean
 local needService = exports["jg-mechanic"]:doesVehicleNeedServicing(plate)
 ```
 

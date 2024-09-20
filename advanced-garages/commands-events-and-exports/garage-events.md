@@ -1,34 +1,63 @@
 # Garage Events
 
-{% hint style="danger" %}
-"GARAGE\_ID"  is the name of the Garage in the Config.GarageLocations
+## Client
 
-"JOB\_GARAGE\_ID" is the name of the job garage in Config.JobGarageLocations
+### jg-advancedgarages:client:open-garage
 
-"IMPOUND\_ID" is the name of the impound in Config.ImpoundLocations
-{% endhint %}
+This event can be used to open a specific garage anywhere
 
-<pre class="language-lua"><code class="lang-lua">-- Open garage (personal garages)
-TriggerEvent("jg-advancedgarages:client:ShowGarage", "GARAGE_ID", false)
+```lua
+-- garageId: string
+-- vehicleType?: "car" | "air" | "sea"
+-- spawnCoords?: vector4 | Only needed for unknown/house garage integrations
+TriggerEvent("jg-advancedgarages:client:open-garage", garageId, vehicleType, spawnCoords)
+```
 
--- Insert vehicle (personal garages)
-TriggerEvent("jg-advancedgarages:client:InsertVehicle", "GARAGE_ID", false)
+### jg-advancedgarages:client:store-vehicle
 
-<strong>-- Open garage (job garages)
-</strong>TriggerEvent("jg-advancedgarages:client:ShowJobGarage", "JOB_GARAGE_ID")
+This event can be used to store a vehicle into a specific garage anywhere
 
--- Insert vehicle (job garages)
-TriggerEvent("jg-advancedgarages:client:JobGarageInsertVehicle", "JOB_GARAGE_ID")
+```lua
+--garageId: string
+--garageVehicleType: "car" | "sea" | "air"
+--return: boolean success
+TriggerEvent("jg-advancedgarages:client:store-vehicle", garageId, garageVehicleType)
+```
 
--- Open garage (gang garages, QBCore only)
-TriggerEvent("jg-advancedgarages:client:ShowGangGarage", "GANG_GARAGE_ID")
+### jg-advancedgarages:client:show-impound-form
 
--- Insert vehicle (gang garages, QBCore only)
-TriggerEvent("jg-advancedgarages:client:GangGarageInsertVehicle", "GANG_GARAGE_ID")
+This event can for example be used in a radial menu to show the impound form
 
--- Open impound
-TriggerEvent("jg-advancedgarages:client:ShowImpound", "IMPOUND_ID")
+```lua
+TriggerEvent("jg-advancedgarages:client:show-impound-form")
+```
 
--- Impound vehicle
-TriggerEvent("jg-advancedgarages:client:ImpoundVehicle")
-</code></pre>
+### jg-advancedgarages:client:show-private-garages-dashboard
+
+This event can be used to open the private garages dashboard so a new garage can be created
+
+```lua
+TriggerEvent("jg-advancedgarages:client:show-private-garages-dashboard")
+```
+
+### jg-advancedgarages:client:show-vplate-form
+
+This event can be used to open the change plate ui
+
+```lua
+-- vehicle?: integer
+TriggerEvent("jg-advancedgarages:client:show-vplate-form", vehicle)
+```
+
+## Server
+
+### jg-advancedgarages:server:register-vehicle-outside
+
+This event can be used to register an owned vehicle if it has been spawned with a thirdparty script (eg. phone valet)
+
+```lua
+--vehicle: integer
+TriggerEvent("jg-advancedgarages:client:show-vplate-form", vehicle)
+```
+
+\
