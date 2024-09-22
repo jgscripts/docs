@@ -98,7 +98,6 @@
   * [ucrtbase.dll!strcmp crash](advanced-garages/troubleshooting/ucrtbase.dll-strcmp-crash.md)
   * [SQL error: foreign key constraint fails](advanced-garages/troubleshooting/sql-error-foreign-key-constraint-fails.md)
 * [Integrations](advanced-garages/integrations/README.md)
-  * [Events](advanced-garages/integrations/events.md)
   * [qb-phone](advanced-garages/integrations/qb-phone.md)
   * [npwd](advanced-garages/integrations/npwd.md)
   * [RoadPhone](advanced-garages/integrations/roadphone.md)
