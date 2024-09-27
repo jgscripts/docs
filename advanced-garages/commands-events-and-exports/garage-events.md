@@ -56,8 +56,9 @@ TriggerEvent("jg-advancedgarages:client:show-vplate-form", vehicle)
 This event can be used to register an owned vehicle if it has been spawned with a thirdparty script (eg. phone valet)
 
 ```lua
---vehicle: integer
-TriggerEvent("jg-advancedgarages:client:show-vplate-form", vehicle)
+--plate: string
+--netId: integer
+TriggerEvent("jg-advancedgarages:server:register-vehicle-outside", plate, netId)
 ```
 
 \
