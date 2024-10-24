@@ -2,9 +2,9 @@
 
 ### Available languages out the box
 
-To use one of the 12 built-in language packs, just select the language in the [configurator](https://configurator.jgscripts.com/dealerships).
+To use one of the 13 built-in language packs, just select the language in the [configurator](https://configurator.jgscripts.com/dealerships).
 
-<table><thead><tr><th width="365">Language</th><th>Code</th></tr></thead><tbody><tr><td>English</td><td>en</td></tr></tbody></table>
+<table><thead><tr><th width="365">Language</th><th>Code</th></tr></thead><tbody><tr><td>English</td><td>en</td></tr><tr><td>Chinese (Simplified)</td><td>cn</td></tr><tr><td>German</td><td>de</td></tr><tr><td>Spanish</td><td>es</td></tr><tr><td>Hungarian</td><td>hu</td></tr><tr><td>Lithuanian</td><td>lt</td></tr><tr><td>Dutch</td><td>nl</td></tr><tr><td>Norwegian</td><td>no</td></tr><tr><td>Polish</td><td>pl</td></tr><tr><td>Portuguese</td><td>pt</td></tr><tr><td>Turkish</td><td>tr</td></tr><tr><td>Vietnamese</td><td>vi</td></tr></tbody></table>
 
 ### Adding a custom language
 

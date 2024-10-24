@@ -2,9 +2,9 @@
 
 ### Available languages out the box
 
-To use one of the 12 built-in language packs, just select the language in the [configurator](https://configurator.jgscripts.com/advanced-garages).
+To use one of the 14 built-in language packs, just select the language in the [configurator](https://configurator.jgscripts.com/advanced-garages).
 
-<table><thead><tr><th width="365">Language</th><th>Code</th></tr></thead><tbody><tr><td>English</td><td>en</td></tr><tr><td>Spanish</td><td>es</td></tr><tr><td>German</td><td>de</td></tr><tr><td>Dutch</td><td>nl</td></tr><tr><td>Danish</td><td>da</td></tr><tr><td>Portuguese</td><td>pt</td></tr><tr><td>Czech</td><td>cs</td></tr><tr><td>Lithuanian</td><td>lt</td></tr><tr><td>Finnish</td><td>fi</td></tr><tr><td>Hungarian</td><td>hu</td></tr><tr><td>Chinese (Simplified)</td><td>cn</td></tr><tr><td>Vietnamese</td><td>vi</td></tr></tbody></table>
+<table><thead><tr><th width="365">Language</th><th>Code</th></tr></thead><tbody><tr><td>English</td><td>en</td></tr><tr><td>Spanish</td><td>es</td></tr><tr><td>German</td><td>de</td></tr><tr><td>Dutch</td><td>nl</td></tr><tr><td>Danish</td><td>da</td></tr><tr><td>Portuguese</td><td>pt</td></tr><tr><td>Czech</td><td>cs</td></tr><tr><td>Lithuanian</td><td>lt</td></tr><tr><td>Finnish</td><td>fi</td></tr><tr><td>Hungarian</td><td>hu</td></tr><tr><td>Chinese (Simplified)</td><td>cn</td></tr><tr><td>Vietnamese</td><td>vi</td></tr><tr><td>Italian</td><td>it</td></tr><tr><td>Swedish</td><td>sv</td></tr></tbody></table>
 
 ### Adding a custom language
 
