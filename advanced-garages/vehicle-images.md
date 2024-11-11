@@ -15,7 +15,10 @@ If you have addon vehicles, and are looking to add images for these vehicles too
 1. There is a folder in the root of the script called `vehicle_images`
 2. Get a **.png** (has to be a png) of the addon vehicle (recommended 140x100px)
 3. Drag the .png into the `vehicle_images` folder
-4. Rename the file to the spawn code/model name of the vehicle - for example `adder.png`
+4. Rename the file to the spawn code/model name of the vehicle - for example `adder.png`&#x20;
+5. Go to the fxmanifest.lua and add `"vehicle_images/*",` into the files table like this:
+
+<figure><img src="../.gitbook/assets/image (33).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 Note: If you are using vehicle images within JG Dealerships, you don't need to duplicate them! JG Advanced Garages will automatically pull those images, so long as the feature is enabled within both scripts :)
