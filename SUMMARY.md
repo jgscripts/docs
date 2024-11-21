@@ -16,6 +16,7 @@
 * [Job Setup](mechanic/job-setup/README.md)
   * [ESX Framework Jobs](mechanic/job-setup/esx-framework-jobs.md)
 * [Inventory Items](mechanic/inventory-items.md)
+* [Props](mechanic/props.md)
 * [Tuning](mechanic/tuning.md)
 * [Integrations](mechanic/integrations.md)
 * [Commands, Events & Exports](mechanic/commands-events-and-exports/README.md)
