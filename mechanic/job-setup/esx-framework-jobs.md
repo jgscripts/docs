@@ -5,7 +5,7 @@ description: How to correctly add the society jobs for esx.
 # ESX Framework Jobs
 
 {% hint style="info" %}
-You only need to follow these steps if you're using**`Config.UseFrameworkJobs = true`**
+You only need to follow these steps if you're usin&#x67;**`Config.UseFrameworkJobs = true`**
 {% endhint %}
 
 Follow these steps for all owned mechanics.
