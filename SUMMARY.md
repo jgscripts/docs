@@ -171,6 +171,12 @@
   * [v2.0.2](advanced-garages/changelog/v2.0.2.md)
   * [v2.0.1](advanced-garages/changelog/v2.0.1.md)
 
+## 📊 Handling
+
+* [Introduction](handling/introduction.md)
+* [Installation](handling/installation.md)
+* [Exports](handling/exports.md)
+
 ## 🎮 Pro Scoreboard
 
 * [Introduction](pro-scoreboard/introduction.md)
