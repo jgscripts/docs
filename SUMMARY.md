@@ -18,6 +18,7 @@
 * [Inventory Items](mechanic/inventory-items.md)
 * [Props](mechanic/props.md)
 * [Tuning](mechanic/tuning.md)
+* [Manual Transmissions & Smooth First Gear](mechanic/manual-transmissions-and-smooth-first-gear.md)
 * [Integrations](mechanic/integrations.md)
 * [Commands, Events & Exports](mechanic/commands-events-and-exports/README.md)
   * [Commands](mechanic/commands-events-and-exports/commands.md)
