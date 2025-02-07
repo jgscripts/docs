@@ -1,7 +1,7 @@
 # Manual Transmissions & Smooth First Gear
 
 {% hint style="danger" %}
-Requires **game build 3258** or newer. You can enforce this on your server by adding `sv_enforceGameBuild 3258` to your server.cfg.
+Requires **game build 3095** or newer. You can enforce this on your server by adding `sv_enforceGameBuild 3095` to your server.cfg.
 {% endhint %}
 
 {% hint style="warning" %}
@@ -14,7 +14,7 @@ You can now add a _real_ manual transmission, in the tablet's tuning parts menu.
 
 To make it as easy as possible to use & actually desirable on your server, we detect if a vehicle has been stuck at a gear at high RPM for an extended time, and show a prompt with the key bindings to upshift/downshift.
 
-Please note that this functionality is only available in **game build 3258 or newer**. It's super simple to enforce a game build on your server; simply add `sv_enforceGameBuild 3258` to your server.cfg.
+Please note that this functionality is only available in **game build 3095 or newer**. It's super simple to enforce a game build on your server; simply add `sv_enforceGameBuild 3095` to your server.cfg.
 
 ### Smooth First Gear
 
