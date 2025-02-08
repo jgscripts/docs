@@ -2,11 +2,9 @@
 
 The ultimate FiveM mechanic script.
 
-## Store
+## Purchase the Script
 
-Learn more: \[coming soon]&#x20;
-
-Store: [https://store.jgscripts.com/package/6212526](https://store.jgscripts.com/package/6212526)
+{% embed url="https://jgscripts.com/scripts/mechanic" %}
 
 ## Showcase
 
