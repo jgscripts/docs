@@ -36,7 +36,22 @@ Config.SmoothFirstGear = true
 
 ### Troubleshooting
 
-Either of the above not working? This is likely due to the vehicle not have `strAdvancedFlags` present in it's handling.meta file. All base GTA vehicles have this unless you have re-streamed all the handling files. If it is missing, you will need to add it to the vehicle(s) manually in order for this functionality to work.
+Either of the above not working? This is due to the vehicle _not_ having `strAdvancedFlags` present in it's handling.meta file. If it is missing, you will need to add it to the vehicle(s) manually in order for this functionality to work, or in the case of base game vehicles, restream their handling.
 
-\[add guide on how to add strAdvancedFlags]
+#### Addon Vehicles
 
+If you're trying to get this to work with an addon vehicle, you will unfortunately have to mess with some code. Head into the vehicle's files, and locale the **handling.meta**. Within there, you will be looking to add:
+
+```xml
+<strAdvancedFlags>0</strAdvancedFlags>
+```
+
+to the section `CCarHandlingData`. Just like this:
+
+<figure><img src="../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+
+If the section `<Item type="CCarHandlingData">`isn't present, then you will have to add it yourself.
+
+#### Base Game Vehicles
+
+Frustratingly, some base game vehicles also have this property missing. To fix this, I am currently working on adding it to all the base game vehicles' handling.meta files which you will be able to re-stream. I will share this with you shortly. The vast majority of base game vehicles should work fine.
