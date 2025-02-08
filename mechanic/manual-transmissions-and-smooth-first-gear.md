@@ -16,6 +16,10 @@ To make it as easy as possible to use & actually desirable on your server, we de
 
 Please note that this functionality is only available in **game build 3095 or newer**. It's super simple to enforce a game build on your server; simply add `sv_enforceGameBuild 3095` to your server.cfg.
 
+See it in action here:
+
+{% embed url="https://youtu.be/KX1HADgs1CQ" %}
+
 ### Smooth First Gear
 
 This is a global config option, that will apply server-wide to all vehicles, including vehicles just spawned in/not owned. It will also update the vehicle's strAdvancedFlags to slow the RPM curve of the first gear to a rate much more realistic. This allows a console-type effect on keyboard, with reduced wheelspin and more time to upshift without being in redline when using a manual transmission.
