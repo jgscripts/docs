@@ -20,6 +20,10 @@ See it in action here:
 
 {% embed url="https://youtu.be/KX1HADgs1CQ" %}
 
+### Changing Key Binds
+
+This is done in-game. Hit `ESC`to go into the pause menu, then head to Settings > Key Binds > GTA Online Vehicles & adjust the "Shift Gear Up"/"Shift Gear Down" binds.
+
 ### Smooth First Gear
 
 This is a global config option, that will apply server-wide to all vehicles, including vehicles just spawned in/not owned. It will also update the vehicle's strAdvancedFlags to slow the RPM curve of the first gear to a rate much more realistic. This allows a console-type effect on keyboard, with reduced wheelspin and more time to upshift without being in redline when using a manual transmission.
