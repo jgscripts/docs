@@ -8,6 +8,30 @@ Requires **game build 3095** or newer. You can enforce this on your server by ad
 Available in Mechanic v1.5 and newer. These settings will have no effect/not appear on electric vehicles.
 {% endhint %}
 
+### Setup
+
+This functionality relies on some new-ish game functionality, via `strAdvancedFlags` in a vehicle's handling.meta. In order for everything to work as expected, we need to make sure this property is at least present in the file.
+
+#### Base Game Vehicles
+
+Most base game vehicles already have it present, but annoyingly, many also have it missing. To fix this, you need to re-stream the handling.meta for all base game vehicles. Sounds complicated, but I made a resource for it, so just drag and drop and then continue with this guide.
+
+{% embed url="https://github.com/jgscripts/fivem-base-vehicle-handling" %}
+
+#### Addon Vehicles
+
+If you're trying to get this to work with an addon vehicle, you will unfortunately have to mess with some code. Head into the vehicle's files, and locale the **handling.meta**. Within there, you will be looking to add:
+
+```xml
+<strAdvancedFlags>0</strAdvancedFlags>
+```
+
+to the section `CCarHandlingData`. Just like this:
+
+<figure><img src="../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+
+If the section `<Item type="CCarHandlingData">`isn't present, then you will have to add it yourself.
+
 ### Manual Transmission
 
 You can now add a _real_ manual transmission, in the tablet's tuning parts menu. This is a special item that will change the vehicle's strAdvancedFlags to prevent automatic shifting and require the player to do it themselves. If gear shifting is performed badly, the engine will take damage. The experience is fairly realistic, without being too difficult to use for the average player. The car will not move if you try to move it in 4th gear, for example.
@@ -33,25 +57,3 @@ You can enable it by setting:
 ```lua
 Config.SmoothFirstGear = true
 ```
-
-### Troubleshooting
-
-Either of the above not working? This is due to the vehicle _not_ having `strAdvancedFlags` present in it's handling.meta file. If it is missing, you will need to add it to the vehicle(s) manually in order for this functionality to work, or in the case of base game vehicles, restream their handling.
-
-#### Addon Vehicles
-
-If you're trying to get this to work with an addon vehicle, you will unfortunately have to mess with some code. Head into the vehicle's files, and locale the **handling.meta**. Within there, you will be looking to add:
-
-```xml
-<strAdvancedFlags>0</strAdvancedFlags>
-```
-
-to the section `CCarHandlingData`. Just like this:
-
-<figure><img src="../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
-
-If the section `<Item type="CCarHandlingData">`isn't present, then you will have to add it yourself.
-
-#### Base Game Vehicles
-
-Frustratingly, some base game vehicles also have this property missing. To fix this, I am currently working on adding it to all the base game vehicles' handling.meta files which you will be able to re-stream. I will share this with you shortly. The vast majority of base game vehicles should work fine.
