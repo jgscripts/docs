@@ -28,7 +28,7 @@ If you're trying to get this to work with an addon vehicle, you will unfortunate
 
 to the section `CCarHandlingData`. Just like this:
 
-<figure><img src="../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (6).png" alt=""><figcaption></figcaption></figure>
 
 If the section `<Item type="CCarHandlingData">`isn't present, then you will have to add it yourself.
 

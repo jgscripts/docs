@@ -16,7 +16,7 @@ There are 3 distinct garage types:
 
 From within the [configurator](https://configurator.jgscripts.com/advanced-garages), it's extremely intuitive to create a new job or gang garage. Simply scroll down to the job or gang garages sections, and click the add garage button.
 
-<figure><img src="../.gitbook/assets/image (3).png" alt=""><figcaption><p>New Job Garage</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (3) (1).png" alt=""><figcaption><p>New Job Garage</p></figcaption></figure>
 
 From within the form, you can give the garage a **unique name,** the in-game job name as it is referred to in the QB or ESX framework (such as `police`), as well as location and spawn coordinates. You can even add multiple spawn locations, in different parking spaces for example.
 

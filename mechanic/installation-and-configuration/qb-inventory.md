@@ -7,7 +7,7 @@
 2. Go to the bottom of`qb-core\shared\items.lua`\
 
 3. Paste all the items before the last `}`\
-   <img src="../../.gitbook/assets/image (1) (1).png" alt="" data-size="original">
+   <img src="../../.gitbook/assets/image (1) (1) (1).png" alt="" data-size="original">
 
 ## Images
 

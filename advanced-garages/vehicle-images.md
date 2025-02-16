@@ -6,7 +6,7 @@ Only available in v2.2.0 or newer
 
 You can now show little vehicle thumbnails inside of the garage UI, as you can see below. This will automatically stay up to date with the latest DLC vehicles.
 
-<figure><img src="../.gitbook/assets/image (2).png" alt=""><figcaption><p>Vehicle thumbnails</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (2) (1).png" alt=""><figcaption><p>Vehicle thumbnails</p></figcaption></figure>
 
 To enable this feature, set `Config.ShowVehicleImages = true`
 

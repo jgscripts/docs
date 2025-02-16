@@ -13,6 +13,7 @@
   * [ox\_inventory](mechanic/installation-and-configuration/ox_inventory.md)
   * [qb-inventory](mechanic/installation-and-configuration/qb-inventory.md)
   * [esx\_inventory](mechanic/installation-and-configuration/esx_inventory.md)
+  * [Setup New Mechanic Location](mechanic/installation-and-configuration/setup-new-mechanic-location.md)
 * [Job Setup](mechanic/job-setup/README.md)
   * [ESX Framework Jobs](mechanic/job-setup/esx-framework-jobs.md)
 * [Inventory Items](mechanic/inventory-items.md)
