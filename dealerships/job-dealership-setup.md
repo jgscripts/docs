@@ -57,6 +57,7 @@ Example is for Police Job!
       -- Job Name &#x26; Rank that use job society funds to purchase vehicles
       police = {0, 1, 2, 3, 4}
     },
+    paymentOptions = {"cash", "bank", "Society"}, -- this is needed inorder to purchase using a society fund
     societyPurchaseGangWhitelist = {},
   },
 </code></pre>
