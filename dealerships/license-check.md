@@ -95,27 +95,26 @@ Do you only want license check for individual dealerships? Then replace the conf
 {% tab title="QBCore" %}
 ```lua
 function ShowroomPreCheck(dealershipId)
-  -- Only check licenses for "boat" dealership
   if dealershipId ~= "boat" then
       return true
   end
 
   local allowed = true
-  local licenseCheck = Config.DealershipLocations[dealershipId].licenseCheck
+  local Player = Framework.Client.GetPlayerData()
   local licenseType = Config.DealershipLocations[dealershipId].license
+  local licenseCheck = Config.DealershipLocations[dealershipId].licenseCheck
+  local hasLicense = Player.metadata['licences'] and Player.metadata['licences'][licenseType]
 
-  if licenseCheck and licenseType then
-      local hasLicense = lib.callback.await('jg-dealerships:server:check-license', false, licenseType)
-
+  if licenseCheck then
       if not hasLicense then
           allowed = false
       end
   end
 
-    if not allowed then
-        local msg = "You require a " .. licenseType .. " license to access this showroom."
-        Framework.Client.Notify(msg, "error", 1000)
-        return false
+  if not allowed then
+      local msg = "You require a " .. licenseType .. " license to access this showroom."
+      Framework.Client.Notify(msg, "error", 1000)
+      return false
   end
 
   return true
