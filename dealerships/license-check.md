@@ -35,7 +35,7 @@ function ShowroomPreCheck(dealershipId)
   end
 
   if not allowed then
-    msg = "You require a ".. Config.DealershipLocations[dealershipId].license
+    local msg = "You require a ".. Config.DealershipLocations[dealershipId].license
     Framework.Client.Notify(msg, "error", 1000 )
     return false
   end
