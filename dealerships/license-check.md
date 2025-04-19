@@ -104,7 +104,6 @@ function ShowroomPreCheck(dealershipId)
   local licenseType = Config.DealershipLocations[dealershipId].license
 
   if licenseCheck and licenseType then
-      -- Ask the server if this player has the required license
       local hasLicense = lib.callback.await('jg-dealerships:server:check-license', false, licenseType)
 
       if not hasLicense then
@@ -120,8 +119,6 @@ function ShowroomPreCheck(dealershipId)
 
   return true
 end
-
---
 ```
 {% endtab %}
 
@@ -137,7 +134,6 @@ end
   local licenseType = Config.DealershipLocations[dealershipId].license
 
   if licenseCheck and licenseType then
-      -- Ask the server if this player has the required license
       local hasLicense = lib.callback.await('jg-dealerships:server:check-license', false, licenseType)
 
       if not hasLicense then
