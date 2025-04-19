@@ -62,9 +62,10 @@ function ShowroomPreCheck(dealershipId)
     end
 
     if not allowed then
-        TriggerServerEvent("jg-dealerships:showroom-notify", "You are not allowed to access the showroom", "error")
+        local msg = "You require a " .. licenseType .. " license to access this showroom."
+        Framework.Client.Notify(msg, "error", 1000)
         return false
-    end
+  end
 
     return true
 end
