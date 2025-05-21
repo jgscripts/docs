@@ -168,6 +168,14 @@ You may be concerned about how much code you have removed. No need to worry: you
 
     \
     You may be concerned about how much code you have removed. No need to worry: you can re-get this code from the Overextended GitHub at any time, and all the functionality has been replaced for you directly inside JG Mechanic. Now do a full server restart and you're ready to go!
-
 </details>
+
+## Need Extra Support?
+
+If you’re stuck or want a visual walkthrough of how to get JG Mechanic set up properly, check out our step-by-step video guide:
+
+[🎥 Watch the Installation & Setup Tutorial](https://youtu.be/W-yAeUgB3tg?si=pje4oke6vEjK4Rs9)
+
+This video covers installation, configuration, and common troubleshooting tips — perfect if you're more of a visual learner or want to double-check your setup.
+
 
