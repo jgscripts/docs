@@ -10,13 +10,13 @@ description: How to correctly create a new mechanic
 
 1. Navigate to `/jg-mechanic/config/config.lua`and locate line 135:
 
-![](<../../.gitbook/assets/image (2).png>)
+![](<../../.gitbook/assets/image (2) (1).png>)
 
 2. This is a decently large section. We are going to highlight and copy from line `135`to line `229`
 
 3) Line 229 should be the second last bracket with in the `Config.MechanicLocations` table. Add a `,` to the end of the bracket `},`:
 
-![](<../../.gitbook/assets/image (4).png>)
+![](<../../.gitbook/assets/image (4) (1).png>)
 
 4. Now we're going to paste the copied lscustoms under line 228 to add a duplicate entry
 
@@ -37,7 +37,7 @@ description: How to correctly create a new mechanic
 
 3) Now navigate to line 228, this should be the second last bracket of the `Config.MechanicLocations` table, Add a `,` to the end of the bracket `},`:
 
-![](<../../.gitbook/assets/image (4).png>)
+![](<../../.gitbook/assets/image (4) (1).png>)
 
 4. Now we're going to paste the copied bennys under line 228 to add a duplicate entry
 

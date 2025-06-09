@@ -173,6 +173,14 @@
   * [v2.0.2](advanced-garages/changelog/v2.0.2.md)
   * [v2.0.1](advanced-garages/changelog/v2.0.1.md)
 
+## ✨ HUD
+
+* [Introduction](hud/introduction.md)
+
+***
+
+* [Default Settings](default-settings.md)
+
 ## 📊 Handling
 
 * [Introduction](handling/introduction.md)
