@@ -176,10 +176,7 @@
 ## ✨ HUD
 
 * [Introduction](hud/introduction.md)
-
-***
-
-* [Default Settings](default-settings.md)
+* [Default Settings](hud/default-settings.md)
 
 ## 📊 Handling
 

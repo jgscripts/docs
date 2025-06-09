@@ -18,11 +18,11 @@ In general, we suggest that you stick to setting default colours, component visi
 
 Once you're happy with the settings you've adjusted, you need to **export them to JSON.** You can do this by clicking the "Import & Export" tab on the left hand side.
 
-<figure><img src=".gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
 
 Once in this tab, you need to click "Copy to Clipboard" to copy the configuration JSON to your clipboard.
 
-<figure><img src=".gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
 
 ### 2. Making the settings profile your server default
 
@@ -32,7 +32,7 @@ You can also make your own file wherever you'd like (within the jg-hud resource 
 
 Once you've got the correct file, open it in a text editor and paste the JSON in your clipboard. Like this:
 
-<figure><img src=".gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
 
 ### 3. Important additional info and settings
 
