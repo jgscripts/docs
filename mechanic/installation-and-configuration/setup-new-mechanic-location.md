@@ -14,7 +14,7 @@ description: How to correctly create a new mechanic
 
 2. This is a decently large section. We are going to highlight and copy from line `135`to line `229`
 
-3) Line 229 should be the second last bracket with in the `Config.MechanicLocations` table. Add a `,` to the end of the bracket `},`:
+3) Line 228 should be the second last bracket with in the `Config.MechanicLocations` table. Add a `,` to the end of the bracket `},`:
 
 ![](<../../.gitbook/assets/image (4) (1).png>)
 
