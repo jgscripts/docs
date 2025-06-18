@@ -176,6 +176,7 @@
 ## ✨ HUD
 
 * [Introduction](hud/introduction.md)
+* [Installation](hud/installation.md)
 * [Default Settings](hud/default-settings.md)
 
 ## 📊 Handling
