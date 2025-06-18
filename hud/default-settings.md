@@ -10,12 +10,6 @@ JG HUD allows you to set default settings for **all users.** These default setti
 
 To create a default settings profile, simply go into `/settings` in game as you usually would to adjust your own HUD.
 
-{% hint style="warning" %}
-**HUGE WARNING:** If you decide to edit the layout of the HUD as part of your default settings profile, keep in mind these are **anchored** to the corner of their default position. So if you change the speedometer from the bottom right to the bottom left, this **WILL NOT** appear correctly on screen resolutions different from yours.\
-\
-In general, we suggest that you stick to setting default colours, component visibility and micro adjustments for components in their default corner to ensure it displays as you would expect on all screen resolutions.
-{% endhint %}
-
 Once you're happy with the settings you've adjusted, you need to **export them to JSON.** You can do this by clicking the "Import & Export" tab on the left hand side.
 
 <figure><img src="../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
@@ -40,7 +34,7 @@ This will now be the default profile for all **new users** of JG HUD in your ser
 
 It's therefore best to set this up before players join your server and use JG HUD for the first time.
 
-If you want players to always use the exact configuration you've made for them, simply set both the following config options to false, which will mean players will always see whatever is in the default settings JSON file. Please note that preventing users from changing their settings, especially the layout of the HUD, is **not recommended.**
+If you want players to always use the exact configuration you've made for them, simply set both the following config options to false, which will mean players will always see whatever is in the default settings JSON file. Please note that preventing users from changing their settings, especially the layout of the HUD, is **not recommended.** This is because some people are on a larger screen and may want to make certain components larger and easier to see.
 
 ```lua
 Config.AllowPlayersToEditSettings = false
