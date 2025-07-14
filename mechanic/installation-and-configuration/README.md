@@ -15,7 +15,7 @@ If you don't plan on using our new default Text UI, you don't need to transfer i
 ensure [jg]
 ```
 
-4. Now navigate into the `inventory` folder. You will need to follow a different guide depending on your chosen inventory. The item images can be found in the `images` folder.
+4. Now navigate into the `install` folder, and then into the `inventory` folder. You will need to follow a different guide depending on your chosen inventory. The item images can be found within the `images` folder.
    * ox\_inventory
    * qb-inventory
    * esx\_inventory
@@ -38,7 +38,7 @@ Scorpion from the JG Scripts community has created a detailed installation guide
 
 ## If you received an error saying \[SQL ERROR]
 
-JG Mechanic tries to automatically make the required database changes. In some cases, this automatic installation fails and you need to make the changes manually.
+JG Mechanic tries to automatically make the required database changes. In rare cases, this automatic installation fails and you need to make the changes manually.
 
 Head into the `install` folder within `jg-mechanic`. Run the `database/run.sql` file within your database software (could be PhpMyAdmin or HeidiSQL).
 
