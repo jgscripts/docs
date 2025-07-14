@@ -5,6 +5,7 @@ Welcome to the official JG Scripts Documentation!
 ### Quick Links
 
 :link: Store: [jgscripts.com](https://jgscripts.com/)\
+:purple\_heart: Discord: [discord.gg/jgscripts](https://discord.gg/jgscripts)\
 :video\_camera: YouTube: [youtube.com/@jgscripts](https://www.youtube.com/@jgscripts)\
 :writing\_hand: Dev Blog: [blog.jgscripts.com](https://blog.jgscripts.com/)\
 :wrench: Configurator: [configurator.jgscripts.com](https://configurator.jgscripts.com/)

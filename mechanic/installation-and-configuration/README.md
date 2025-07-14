@@ -30,6 +30,12 @@ In this file, you will mainly want to customise mechanic locations, core pricing
 
 If you want to dive deeper and really customise the script to your servers specific needs, we have 3 other config files for you to play with. It will allow you to fine tune how cosmetics, servicing & tuning (engine swaps, brakes, tyres, etc) work in your city. These files are heavily commented to help you understand them. They can be a little complicated, so only modify them if you know what you're doing and somewhat comfortable with Lua.
 
+## Video Installation Guide
+
+Scorpion from the JG Scripts community has created a detailed installation guide, including configuration & inventory setup for QB, Qbox & ESX.
+
+{% embed url="https://www.youtube.com/watch?v=W-yAeUgB3tg" %}
+
 ## If you received an error saying \[SQL ERROR]
 
 JG Mechanic tries to automatically make the required database changes. In some cases, this automatic installation fails and you need to make the changes manually.
