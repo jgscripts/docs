@@ -1,4 +1,4 @@
-# JG Scripts Docs
+# Welcome
 
 Welcome to the official JG Scripts Documentation!
 
@@ -16,7 +16,7 @@ Support is available 7 days a week to verified customers who have purchased the 
 
 You can get support for our scripts here: [https://jgscripts.com/support](https://jgscripts.com/support)
 
-### **Refunds & Terms of Purchase**
+### Refunds & Terms of Purchase
 
 See our refund terms here: [https://jgscripts.com/terms#refunds](https://jgscripts.com/terms#refunds)\
 Full terms of purchase: [https://jgscripts.com/terms](https://jgscripts.com/terms)
