@@ -1,6 +1,6 @@
 # Table of contents
 
-* [Welcome!](README.md)
+* [JG Scripts Docs](README.md)
 * [Claim Purchase](claim-purchase.md)
 * [FiveM Escrow Errors](fivem-escrow-errors.md)
 * [Permissions Troubleshooting](permissions-troubleshooting.md)
