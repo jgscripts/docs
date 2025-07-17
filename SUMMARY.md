@@ -178,10 +178,7 @@
 * [Introduction](hud/introduction.md)
 * [Installation](hud/installation.md)
 * [Default Settings](hud/default-settings.md)
-
-***
-
-* [Custom Street/Zone Names](custom-street-zone-names.md)
+* [Custom Street/Zone Names](hud/custom-street-zone-names.md)
 
 ## 📊 Handling
 
