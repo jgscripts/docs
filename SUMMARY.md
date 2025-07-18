@@ -179,6 +179,8 @@
 * [Installation](hud/installation.md)
 * [Default Settings](hud/default-settings.md)
 * [Custom Street/Zone Names](hud/custom-street-zone-names.md)
+* [Integrations](hud/integrations/README.md)
+  * [Third-Party Seatbelts](hud/integrations/third-party-seatbelts.md)
 
 ## 📊 Handling
 
