@@ -1,10 +1,10 @@
-# Garage Events
+# Events
 
 ## Client
 
-### jg-advancedgarages:client:open-garage
+### Open garage
 
-This event can be used to open a specific garage anywhere
+This event can be used to open a specific garage, such as via a radial menu.  If the `garageId` is a registered garage (i.e. specified in the config), it will perform a location check automatically for security.
 
 ```lua
 -- garageId: string
@@ -13,9 +13,9 @@ This event can be used to open a specific garage anywhere
 TriggerEvent("jg-advancedgarages:client:open-garage", garageId, vehicleType, spawnCoords)
 ```
 
-### jg-advancedgarages:client:store-vehicle
+### Store current vehicle
 
-This event can be used to store a vehicle into a specific garage anywhere
+This event can be used to store the vehicle into a garage. If the `garageId` is a registered garage (i.e. specified in the config), it will perform a location check automatically for security.
 
 ```lua
 --garageId: string
@@ -24,25 +24,25 @@ This event can be used to store a vehicle into a specific garage anywhere
 TriggerEvent("jg-advancedgarages:client:store-vehicle", garageId, garageVehicleType)
 ```
 
-### jg-advancedgarages:client:show-impound-form
+### Show impound form
 
-This event can for example be used in a radial menu to show the impound form
+Show the impound form (if you have permissions) - useful for showing via a radial menu, item, or key bind.
 
 ```lua
 TriggerEvent("jg-advancedgarages:client:show-impound-form")
 ```
 
-### jg-advancedgarages:client:show-private-garages-dashboard
+### Show private garages manager
 
-This event can be used to open the private garages dashboard so a new garage can be created
+This event can be used to open the private garages dashboard so a private garage can be created, edited or deleted.
 
 ```lua
 TriggerEvent("jg-advancedgarages:client:show-private-garages-dashboard")
 ```
 
-### jg-advancedgarages:client:show-vplate-form
+### Show change plate form
 
-This event can be used to open the change plate ui
+This event can be used to open the change plate UI.
 
 ```lua
 -- vehicle?: integer
@@ -51,9 +51,11 @@ TriggerEvent("jg-advancedgarages:client:show-vplate-form", vehicle)
 
 ## Server
 
-### jg-advancedgarages:server:register-vehicle-outside
+### Register vehicle outside \[deprecated]
 
-This event can be used to register an owned vehicle if it has been spawned with a thirdparty script (eg. phone valet)
+{% hint style="danger" %}
+This event has been deprecated and will be removed in a future release.
+{% endhint %}
 
 ```lua
 --plate: string
