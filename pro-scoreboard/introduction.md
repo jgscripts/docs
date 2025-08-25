@@ -1,11 +1,5 @@
 # Introduction
 
-Hey there! Thanks so much for checking out Pro Scoreboard. We hope you will love it! If you are not already part of the discord, you can join it here: [discord.jgscripts.com](https://discord.jgscripts.com)
+Pro Scoreboard is no longer available for sale, but if you are an existing customer, you can still find installation information on the next page.
 
-![Preview](../.gitbook/assets/screenshot.png)
-
-### How to Claim Purchase
-
-To learn to how claim your purchase after install,[ click here](introduction.md#undefined).
-
-To learn how to install and configure the script, check out the QBCore or ESX install guides in the left sidebar!
+Existing customers still receive full support, in case you're having issues: [jgscripts.com/support](https://jgscripts.com/support)&#x20;

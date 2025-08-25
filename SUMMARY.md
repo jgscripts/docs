@@ -189,6 +189,12 @@
 * [Installation](handling/installation.md)
 * [Exports](handling/exports.md)
 
+## 🔢 Vehicle Mileage
+
+* [Exports](vehicle-mileage/exports/README.md)
+  * [Client Exports](vehicle-mileage/exports/client-exports.md)
+  * [Server Exports](vehicle-mileage/exports/server-exports.md)
+
 ## 🎮 Pro Scoreboard
 
 * [Introduction](pro-scoreboard/introduction.md)
