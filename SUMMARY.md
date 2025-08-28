@@ -192,6 +192,7 @@
 ## 🔢 Vehicle Mileage
 
 * [Introduction](vehicle-mileage/introduction.md)
+* [Installation](vehicle-mileage/installation.md)
 * [Custom Framework](vehicle-mileage/custom-framework.md)
 * [Exports](vehicle-mileage/exports/README.md)
   * [Client Exports](vehicle-mileage/exports/client-exports.md)
