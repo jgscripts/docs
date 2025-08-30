@@ -1,3 +1,8 @@
+---
+cover: .gitbook/assets/server-invite-bg.png
+coverY: 0
+---
+
 # Welcome
 
 Welcome to the official JG Scripts Documentation!
