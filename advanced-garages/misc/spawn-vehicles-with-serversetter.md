@@ -10,4 +10,6 @@ Having significant issues after enabling this? I beg you to just turn it off bef
 
 HIGHLY recommended that you set `Config.DoNotSpawnInsideVehicle = false` if you decide to enable this.
 
-Want to read my 'technical' rant about why server-sided vehicles are so frustrating in FiveM, or why this option even exists? See: [why-are-you-not-using-createvehicleserversetter-by-default.md](why-are-you-not-using-createvehicleserversetter-by-default.md "mention")
+Want to read my 'technical' rant about why server-sided vehicles are so frustrating in FiveM, or why this option even exists? See my blog:
+
+{% embed url="https://blog.jgscripts.com/why-are-you-not-using-createvehicleserversetter-by-default" %}
