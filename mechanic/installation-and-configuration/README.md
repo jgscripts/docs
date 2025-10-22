@@ -2,23 +2,43 @@
 
 ## Installation
 
-1. Unzip the `jg-mechanic-bundle`&#x20;
-2. Drag all 4 folders (`jg-mechanic`, `jg-mechanic-props`, `jg-vehiclemileage` and `jg-textui`) into a new folder called `[jg]` within your server's `resources` folder.
+{% stepper %}
+{% step %}
+###
+
+Unzip the `jg-mechanic-bundle`&#x20;
+{% endstep %}
+
+{% step %}
+###
+
+Drag all 4 folders (`jg-mechanic`, `jg-mechanic-props`, `jg-vehiclemileage` and `jg-textui`) into a new folder called `[jg]` within your server's `resources` folder.
 
 {% hint style="info" %}
 If you don't plan on using our new default Text UI, you don't need to transfer it to your server, and you can choose a different Text UI script in the config!
 {% endhint %}
+{% endstep %}
 
-3. Inside of your `server.cfg`, add a new line **after** all your other resources have started:
+{% step %}
+###
+
+Inside of your `server.cfg`, add a new line **after** all your other resources have started:
 
 ```
 ensure [jg]
 ```
+{% endstep %}
 
-4. Now navigate into the `install` folder, and then into the `inventory` folder. You will need to follow a different guide depending on your chosen inventory. The item images can be found within the `images` folder.
-   * ox\_inventory
-   * qb-inventory
-   * esx\_inventory
+{% step %}
+###
+
+Now navigate into the `install` folder, and then into the `inventory` folder. You will need to follow a different guide depending on your chosen inventory. The item images can be found within the `images` folder.
+
+* ox\_inventory
+* qb-inventory
+* esx\_inventory
+{% endstep %}
+{% endstepper %}
 
 ## Configuration
 
