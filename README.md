@@ -2,17 +2,17 @@
 layout:
   width: wide
   title:
-    visible: true
+    visible: false
   description:
-    visible: true
+    visible: false
   tableOfContents:
     visible: true
   outline:
-    visible: true
+    visible: false
   pagination:
-    visible: true
+    visible: false
   metadata:
-    visible: true
+    visible: false
 ---
 
 # 👋 Welcome
