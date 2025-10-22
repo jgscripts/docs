@@ -2,6 +2,10 @@
 
 Hey there! Thanks so much for checking out Advanced Garages. We hope you will love it! If you are not already part of the discord, you can join it here: [discord.jgscripts.com](https://discord.jgscripts.com)
 
+### Purchase the Script
+
+{% embed url="https://jgscripts.com/scripts/advanced-garages" %}
+
 ### Demo Video
 
 {% embed url="https://youtu.be/9dU7TvwwviY" %}
