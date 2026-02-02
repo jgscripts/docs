@@ -50,7 +50,8 @@
 
 * [Introduction](dealerships/introduction.md)
 * [Installation & Configuration](dealerships/installation-and-configuration.md)
-* [Job & Gang Whitelists](dealerships/job-and-gang-whitelists.md)
+* [Migrating from v1](dealerships/migrating-from-v1.md)
+* [Job & Gang Whitelists](dealerships/advanced-configuration.md)
 * [License Check](dealerships/license-check.md)
 * [Importing Vehicles](dealerships/importing-vehicles.md)
 * [Employees](dealerships/employees.md)
