@@ -31,12 +31,10 @@ end
    \
    `return 65 -- or set up custom fuel system here...`\
    \
-   replacing it with your custom **get fuel level** code. Remember to rename the vehicle entity variable to `vehicle` in case your code snippet has it named differently.\
-
+   replacing it with your custom **get fuel level** code. Remember to rename the vehicle entity variable to `vehicle` in case your code snippet has it named differently.<br>
 4. Do the same inside the `VehicleSetFuel` function replacing the line that says\
    \
    `-- Setup custom fuel system here`\
    \
-   with the **set fuel level** function of your fuel script. The vehicle entity variable is named `vehicle` and the fuel level is named `fuel` - again make sure to rename these if they are named differently in the snippet you are using! \
-
+   with the **set fuel level** function of your fuel script. The vehicle entity variable is named `vehicle` and the fuel level is named `fuel` - again make sure to rename these if they are named differently in the snippet you are using! <br>
 5. Make sure that in the Configurator or `config.lua` you have set the Fuel system to **None**.

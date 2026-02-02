@@ -10,32 +10,25 @@ You only need to follow these steps if you're usin&#x67;**`Config.UseFrameworkJo
 
 Follow these steps for all owned mechanics.
 
-1.  Get the job name from the config.lua\
-
+1.  Get the job name from the config.lua<br>
 
     <figure><img src="../../.gitbook/assets/image (26).png" alt=""><figcaption></figcaption></figure>
-2. Go to your database.\
-
-3.  Open the `addon_account` table\
-
+2. Go to your database.<br>
+3.  Open the `addon_account` table<br>
 
     <figure><img src="../../.gitbook/assets/image (28).png" alt=""><figcaption></figcaption></figure>
-4.  Right click and press Insert row\
-
+4.  Right click and press Insert row<br>
 
     <figure><img src="../../.gitbook/assets/image (29).png" alt=""><figcaption></figcaption></figure>
 5.  Set the name to `society_[JOBNAME]`
 
     For example: job name `lscustoms` would be `society_lscustoms`\
-    Set the `shared` column to 1\
-
+    Set the `shared` column to 1<br>
 6.  Open the addon\_account\_data table\
-    \
-
+    <br>
 
     <figure><img src="../../.gitbook/assets/image (30).png" alt=""><figcaption></figcaption></figure>
-7.  Right click and press Insert row\
-
+7.  Right click and press Insert row<br>
 
     <figure><img src="../../.gitbook/assets/image (31).png" alt=""><figcaption></figcaption></figure>
 8. Set the account\_name to the same as before eg: `society_lscustoms`\

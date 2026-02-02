@@ -22,5 +22,5 @@ We would love for you to contribute! If you want to contribute a new locale file
 * When creating a new locale file, simply copy an existing one (recommended to use English as it's the original file created by us), and replace the translations with the ones there.
 *   The start of the file must keep the variable declaration, and you must replace the existing language code to match the name of the file.
 
-    <figure><img src=".gitbook/assets/image (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src=".gitbook/assets/image (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 * Test the file before submitting your Pull Request to ensure that there are no syntax errors.

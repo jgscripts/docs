@@ -12,7 +12,7 @@ To create a default settings profile, simply go into `/settings` in game as you 
 
 Once you're happy with the settings you've adjusted, you need to **export them to JSON.** You can do this by clicking the "Import & Export" tab on the left hand side.
 
-<figure><img src="../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
 
 Once in this tab, you need to click "Copy to Clipboard" to copy the configuration JSON to your clipboard.
 

@@ -63,4 +63,4 @@ This event has been deprecated and will be removed in a future release.
 TriggerEvent("jg-advancedgarages:server:register-vehicle-outside", plate, netId)
 ```
 
-\
+<br>

@@ -58,12 +58,10 @@ end
    \
    If you need to get the vehicle model/spawn code, you can use:\
    \
-   `local model = GetDisplayNameFromVehicleModel(GetEntityModel(vehicleEntity))`\
-
+   `local model = GetDisplayNameFromVehicleModel(GetEntityModel(vehicleEntity))`<br>
 4. If your key script has the ability to remove keys, you can do the same inside the `VehicleRemoveKeys` function replacing the line that says\
    \
    `-- Setup custom key system here...`\
    \
-   with the **remove keys** export of your key script. Again, ensure you are using variables from the ones available, `plate` and `vehicleEntity`\
-
+   with the **remove keys** export of your key script. Again, ensure you are using variables from the ones available, `plate` and `vehicleEntity`<br>
 5. Make sure that in the Configurator or `config.lua` you have set the VehicleKeys to `none`.

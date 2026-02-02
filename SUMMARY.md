@@ -46,15 +46,13 @@
   * [v1.0.2](mechanic/changelog/v1.0.2.md)
   * [v1.0.1](mechanic/changelog/v1.0.1.md)
 
-## 🚘 Dealerships
+## 🚘 Dealerships v2 <a href="#dealerships" id="dealerships"></a>
 
 * [Introduction](dealerships/introduction.md)
 * [Installation & Configuration](dealerships/installation-and-configuration.md)
-* [Advanced Configuration](dealerships/advanced-configuration.md)
-* [Job Dealership Setup](dealerships/job-dealership-setup.md)
+* [Job & Gang Whitelists](dealerships/job-and-gang-whitelists.md)
 * [License Check](dealerships/license-check.md)
 * [Importing Vehicles](dealerships/importing-vehicles.md)
-* [Dealership Locations](dealerships/dealership-locations.md)
 * [Employees](dealerships/employees.md)
 * [Custom Payment Options](dealerships/custom-payment-options.md)
 * [Plate Format](dealerships/plate-format.md)

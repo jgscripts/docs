@@ -21,6 +21,13 @@ To use the tool, simply change the settings to your preference, then scroll to t
 
 You can then move the downloaded `config.lua` file into the root of the `jg-dealerships` resource, replacing the existing one. To modify your `config.lua` in the future or after an update, you can import it by clicking "Import existing config" at the top of the page. You can then make changes to it and re-generate when you're finished.
 
+### Understanding Dealership Locations
+
+* A dealership can be **Self-service** or **Owned**.
+* If a dealership is self service, there are no stock levels and vehicles are entirely managed by admins via `/dealeradmin`.
+* If a dealership is owned, you can set the owner in /dealeradmin, which will then give the owner access to the Open Management location, configurable in the config.
+* Dealership categories dictate what categories are browsable and what vehicles will be available in the showroom UI.
+
 ## If you received an error saying \[SQL ERROR]
 
 JG Dealerships tries to automatically make the required database changes. In some cases, this automatic installation fails and you need to make the changes manually.
