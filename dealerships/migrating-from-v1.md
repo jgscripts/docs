@@ -31,9 +31,25 @@ Config.Target = "auto" -- or "ox_target"
 Config.DrawText3d = "auto" -- or "sleepless_interact"
 Config.RadialMenu = "auto" -- or "ox_lib"
 Config.BlipNameFormat = "Dealership: %s"
-Config.EntityStreamingDistance = 20.0 -- Distance in meters at which entities despawn/respawn
+Config.EntityStreamingDistance = 100.0 -- Distance in meters at which entities despawn/respawn
 Config.TruckingMissionForOrderDeliveries = true
 Config.DealershipMaxActiveTestDrives = 5 -- Maximum number of active test drives per dealership
+Config.EmployeePermissions = {
+  ["Manager"] = {
+    "ADMIN", -- Full access
+  },
+  ["Supervisor"] = {
+    "MANAGE_INVENTORY",
+    "VIEW_RECORDS",
+    "SELL",
+    "DELIVER",
+  },
+  ["Sales"] = {
+    "SELL",
+    "VIEW_RECORDS",
+    "DELIVER",
+  },
+}
 ```
 
 ### Step 3: Restart and Migrate Database
