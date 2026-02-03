@@ -3,32 +3,45 @@
 ## Installation
 
 1. Unzip the `jg-dealerships-bundle`&#x20;
-2. Drag both `jg-dealerships` and `jg-textui` into either your `[qb]` or `[esx_addons]` folder within your server. _If you don't plan on using our new default Text UI, you don't need to transfer it to your server, and you can choose a different Text UI script in the config!_
+2. Drag `jg-dealerships` into a new folder called `[jg]` within your server's `resources` folder.
 
-{% hint style="warning" %}
-You should probably disable `qb-vehicleshop` or `esx_vehicleshop` because there will be location clashes ;)
+{% hint style="info" %}
+If you don't plan on using our new default Text UI, `jg-textui`, you don't need to transfer it to your server, and you can choose a different Text UI script in the config!
 {% endhint %}
 
-## Configuration
+3. Inside of your `server.cfg`, add a new line **after** all your other resources have started:
 
-Now comes the fun part, configuring the script to your servers needs. No need to mess with any code - we have an awesome new configuration tool, that makes it a breeze:
+```
+ensure [jg]
+```
 
-{% embed url="https://configurator.jgscripts.com/dealerships" %}
-Dealerships Configurator
-{% endembed %}
+{% hint style="danger" %}
+You should probably disable `qb-vehicleshop` or `esx_vehicleshop` because there will be location clashes!
+{% endhint %}
 
-To use the tool, simply change the settings to your preference, then scroll to the bottom of the page and click the big blue "Generate config.lua" button.
+### Setting Up Locations
 
-You can then move the downloaded `config.lua` file into the root of the `jg-dealerships` resource, replacing the existing one. To modify your `config.lua` in the future or after an update, you can import it by clicking "Import existing config" at the top of the page. You can then make changes to it and re-generate when you're finished.
+Dealership locations are now created and managed entirely in-game. No configuration required!
 
-### Understanding Dealership Locations
+1. Open the admin panel with `/dealeradmin`
+2. Navigate to **Locations**
+3. Click **Create Location**
+4. Configure the location settings
+5. Save the location
 
-* A dealership can be **Self-service** or **Owned**.
-* If a dealership is self service, there are no stock levels and vehicles are entirely managed by admins via `/dealeradmin`.
-* If a dealership is owned, you can set the owner in /dealeradmin, which will then give the owner access to the Open Management location, configurable in the config.
-* Dealership categories dictate what categories are browsable and what vehicles will be available in the showroom UI.
+#### Location Types
 
-## If you received an error saying \[SQL ERROR]
+<table><thead><tr><th width="226">Type</th><th>Description</th></tr></thead><tbody><tr><td><code>self-service</code></td><td>Public dealership where anyone can browse and purchase vehicles (no stock limits)</td></tr><tr><td><code>owned</code></td><td>Player-owned dealership with stock management, employees, direct sales and finances</td></tr></tbody></table>
+
+### Configuration
+
+Further configuration options are available in the `config/config.lua` file. Most of the options are set to auto, meaning that in some cases, you may not need to edit this file at all!
+
+The most important options that would need editing are **Localisation**, **Framework & Integrations** & **Interaction Methods**.
+
+If you want to add any custom dealership categories, this would also need to be done in the config. You can find categories a little further down, under `Config.Categories`. Dealership categories dictate what categories are browsable and what vehicles will be available in the showroom UI.
+
+### If you received an error saying \[SQL ERROR]
 
 JG Dealerships tries to automatically make the required database changes. In some cases, this automatic installation fails and you need to make the changes manually.
 
@@ -42,6 +55,6 @@ If you get the error along the lines of `cannot use the syntax IF NOT EXISTS` - 
 Make sure you are running this SQL code within the correct database - triple check and cross reference the name of the database!
 {% endhint %}
 
-## Integrations
+### Integrations
 
 Scripts are more fun when they work with others! See a full list of supported integrations and how to get them set up here: [integrations](integrations/ "mention")
