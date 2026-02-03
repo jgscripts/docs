@@ -50,10 +50,10 @@
 
 * [Introduction](dealerships/introduction.md)
 * [Installation & Configuration](dealerships/installation-and-configuration.md)
+* [Importing Vehicles](dealerships/importing-vehicles.md)
 * [Migrating from v1](dealerships/migrating-from-v1.md)
 * [Job & Gang Whitelists](dealerships/advanced-configuration.md)
 * [License Check](dealerships/license-check.md)
-* [Importing Vehicles](dealerships/importing-vehicles.md)
 * [Employees](dealerships/employees.md)
 * [Custom Payment Options](dealerships/custom-payment-options.md)
 * [Plate Format](dealerships/plate-format.md)

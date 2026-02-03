@@ -1,5 +1,9 @@
 # License Check
 
+{% hint style="danger" %}
+This guide currently only works with JG Dealerships v1. An updated guide for v2 is coming soon.
+{% endhint %}
+
 {% hint style="info" %}
 Firstly you will need to add the following to each dealership in the config.lua
 {% endhint %}
