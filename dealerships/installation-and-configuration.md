@@ -19,6 +19,12 @@ ensure [jg]
 You should probably disable `qb-vehicleshop` or `esx_vehicleshop` because there will be location clashes!
 {% endhint %}
 
+### Migrating from v1?
+
+If you want to keep all of your existing data, stop here and follow this guide instead:
+
+[migrating-from-v1.md](migrating-from-v1.md "mention")
+
 ### Setting Up Locations
 
 Dealership locations are now created and managed entirely in-game. No configuration required!
