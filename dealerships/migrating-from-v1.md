@@ -4,6 +4,10 @@
 This guide is only useful if you are looking to retain all the data from your v1 installation. If you want to start from scratch with v2, follow the installation guide to install it from scratch.
 {% endhint %}
 
+{% hint style="danger" %}
+**Back up everything before you start!** Dealerships v2 is new, and there is a risk you could lose your existing data. Back up your existing database table, and your previous working version of JG Dealerships v1.
+{% endhint %}
+
 This guide walks you through upgrading from JG Dealerships v1 to v2 while preserving your existing data.
 
 ### Before You Begin
