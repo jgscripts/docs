@@ -25,7 +25,7 @@ This guide walks you through upgrading from JG Dealerships v1 to v2 while preser
 Add the following new v2 options to the bottom of your `config.lua`:
 
 ```lua
-Config.UseFrameworkJobs = true
+Config.UseFrameworkJobs = false
 Config.InteractionMethod = "textui" -- or "target", "3dtextui", "radial"
 Config.Target = "auto" -- or "ox_target"
 Config.DrawText3d = "auto" -- or "sleepless_interact"
