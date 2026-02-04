@@ -17,7 +17,7 @@ layout:
 
 # 👋 Welcome
 
-<h2 align="center">Everything You Need to Use JG Scripts</h2>
+<h2 align="center">Complete Guides for Everything JG</h2>
 
 <p align="center">Installation guides, tutorials, integrations &#x26; more.</p>
 
