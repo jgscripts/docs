@@ -1,10 +1,10 @@
 # Exports
 
-## Server Exports
+### Server Exports
 
 ***
 
-### vehiclePlateUpdated
+#### vehiclePlateUpdated
 
 You need to run this export in all scripts that updates plates, otherwise you will lose your vehicle's data.
 
@@ -14,7 +14,7 @@ You need to run this export in all scripts that updates plates, otherwise you wi
 </strong><strong>exports["jg-mechanic"]:vehiclePlateUpdated(plate, newPlate)
 </strong></code></pre>
 
-### doesVehicleNeedServicing
+#### doesVehicleNeedServicing
 
 Returns if a vehicle needs servicing.
 
@@ -24,7 +24,7 @@ Returns if a vehicle needs servicing.
 local needService = exports["jg-mechanic"]:doesVehicleNeedServicing(plate)
 ```
 
-### getVehicleServiceHistory
+#### getVehicleServiceHistory
 
 Returns the service history from a specific vehicle.
 

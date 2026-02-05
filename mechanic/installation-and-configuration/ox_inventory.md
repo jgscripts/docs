@@ -1,13 +1,13 @@
 # ox\_inventory
 
-## Items
+### Items
 
 1. Go to `jg-mechanic\install\inventory\ox_inventory-items.lua` and copy the whole list **without** `Config.Items = {` and `}` at line **3** and **190.**<br>
 2. Go to the bottom of`ox_inventory\data\items.lua`<br>
 3. Paste the items before the last `}`\
    ![](<../../.gitbook/assets/image (25).png>)
 
-## Images
+### Images
 
 1. Go to `jg-mechanic\install\inventory\images` and copy all the images.<br>
 2. Locate the `ox_inventory\web\images` folder.<br>

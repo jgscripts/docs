@@ -1,6 +1,6 @@
 # esx\_inventory
 
-## Items
+### Items
 
 1. Open your preferred database handler (HeidiSQL or PHPMyAdmin)<br>
 2. Open the esx-items.sql file and run it.<br>

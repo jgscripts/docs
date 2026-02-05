@@ -12,15 +12,21 @@ This guide walks you through upgrading from JG Dealerships v1 to v2 while preser
 
 ### Before You Begin
 
-⚠️ **Important:** Back up your existing `config.lua` file before proceeding. You will need it later.
+{% hint style="warning" %}
+**Important:** Back up your existing `config.lua` file before proceeding. You will need it later.
+{% endhint %}
 
-### Step 1: Replace Script Files
+{% stepper %}
+{% step %}
+### Replace Script Files
 
 1. Delete all existing files in your `jg-dealerships` folder
 2. Extract the new v2 files downloaded from Portal into the folder
 3. Copy your backed-up `config.lua` into `config/config.lua`, replacing the new one
+{% endstep %}
 
-### Step 2: Add New Configuration Options
+{% step %}
+### Add New Configuration Options
 
 Add the following new v2 options to the bottom of your `config.lua`:
 
@@ -51,20 +57,26 @@ Config.EmployeePermissions = {
   },
 }
 ```
+{% endstep %}
 
-### Step 3: Restart and Migrate Database
+{% step %}
+### Restart and Migrate Database
 
 1. Fully restart your server
 2. Run the migration command using **one** of these methods:
    * Type `/migratev2` in the in-game chat
    * Run `migratev2` in the txAdmin server console
+{% endstep %}
 
-### Step 4: Import Your Locations
+{% step %}
+### Import Your Locations
 
 1. Navigate to `/dealeradmin` in-game
 2. Click the **Import** button
 3. Select **"Existing Config"** (described as: _Import locations from your config.lua (for v1 migration)_)
 4. Follow the import wizard to complete the process
+{% endstep %}
+{% endstepper %}
 
 ### Done!
 

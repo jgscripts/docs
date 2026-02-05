@@ -2,9 +2,9 @@
 
 
 
-## Client
+### Client
 
-### Open tuning menu
+#### Open tuning menu
 
 Can be used to open the tuning menu at a specific location
 
@@ -14,7 +14,7 @@ Can be used to open the tuning menu at a specific location
 TriggerEvent("jg-mechanic:client:open-customisation-menu", mechanicId, mechanicLabel)
 ```
 
-### Open tablet
+#### Open tablet
 
 Can be used to open the tablet
 
@@ -22,7 +22,7 @@ Can be used to open the tablet
 TriggerEvent("jg-mechanic:client:use-tablet")
 ```
 
-### Open admin menu
+#### Open admin menu
 
 Can be used to open the admin menu
 
@@ -30,7 +30,7 @@ Can be used to open the admin menu
 TriggerEvent("jg-mechanic:client:open-admin")
 ```
 
-### Listen to toggling of tablet visibility for interactions
+#### Listen to toggling of tablet visibility for interactions
 
 ```lua
 AddEventHandler("jg-mechanic:client:tablet-hidden-for-interaction", function() end)

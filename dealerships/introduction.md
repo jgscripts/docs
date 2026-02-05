@@ -8,15 +8,7 @@ Hey there! Thanks so much for checking out Dealerships v2! We hope you will love
 
 ### Showcase
 
-{% embed url="https://www.youtube.com/watch?v=CUW4qnxyOLQ" %}
-Dealerships Showcase
-{% endembed %}
-
-### v1.1 Update Video
-
-Employees, direct selling, sell vehicle and more!
-
-{% embed url="https://www.youtube.com/watch?app=desktop&v=q08zR7r3ijI" %}
+{% embed url="https://www.youtube.com/watch?v=EbMUke7lYhA" %}
 
 ### Installation & Configuration
 

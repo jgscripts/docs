@@ -1,6 +1,6 @@
 # Installation & Configuration
 
-## Installation
+### Installation
 
 1. Unzip the `jg-dealerships-bundle`&#x20;
 2. Drag `jg-dealerships` into a new folder called `[jg]` within your server's `resources` folder.
