@@ -65,6 +65,7 @@
   * [Pickle Mods Documents](dealerships/integrations/pickle-mods-documents.md)
   * [okokContract](dealerships/integrations/okokcontract.md)
   * [qb-vehiclesales](dealerships/integrations/qb-vehiclesales.md)
+  * [qbx\_vehiclesales](dealerships/integrations/qbx_vehiclesales.md)
 * [Changelog](dealerships/changelog/README.md)
   * [v1.4.0](dealerships/changelog/v1.4.0.md)
   * [v1.3.1](dealerships/changelog/v1.3.1.md)
