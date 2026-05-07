@@ -1,0 +1,3 @@
+# Commands
+
+<table data-full-width="false"><thead><tr><th width="405">Description</th><th width="165.33333333333331">Command</th><th width="120">Permission</th></tr></thead><tbody><tr><td>Manage all dealerships and vehicles, including importing data, in-game</td><td><code>/dealeradmin</code></td><td>Admins</td></tr><tr><td>View financed vehicles, make missed payments, make an early payment or pay in full. If you use Advanced Garages, this is built into the garage!</td><td><code>/myfinance</code></td><td>Everyone</td></tr><tr><td>Dealership owners and employees can sell vehicles directly to customers in RP without the use of the showroom</td><td><code>/directsale</code></td><td>Dealership Employees</td></tr></tbody></table>

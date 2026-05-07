@@ -1,5 +1,9 @@
 # Server API
 
+{% hint style="warning" %}
+These exports are only available in Dealerships v2.1.1 or newer.
+{% endhint %}
+
 {% hint style="info" %}
 **Player Identifiers:** Some exports accept an `identifier` parameter. This is the player's `citizenid` (QBCore/Qbox) or `identifier` (ESX), depending on your framework.
 {% endhint %}
