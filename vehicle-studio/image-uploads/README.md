@@ -25,7 +25,7 @@ API keys and private provider settings live in `config/config.upload.lua`, which
 
 Batch photography can upload remote images concurrently for efficiency.
 
-The queue settings live in `config/config.lua`:
+The queue settings live in `config/config.upload.lua`:
 
 ```lua
 Config.RemoteImageUploadQueue = {
