@@ -1,4 +1,26 @@
-# 👋 Welcome
+---
+icon: hand-wave
+layout:
+  width: default
+  title:
+    visible: false
+  description:
+    visible: false
+  tableOfContents:
+    visible: true
+  outline:
+    visible: false
+  pagination:
+    visible: false
+  metadata:
+    visible: false
+  tags:
+    visible: true
+  actions:
+    visible: true
+---
+
+# Welcome
 
 <h2 align="center">Complete Guides for Everything JG</h2>
 

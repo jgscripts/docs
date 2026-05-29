@@ -1,12 +1,12 @@
 # Table of contents
 
-* [👋 Welcome](README.md)
+* [Welcome](README.md)
 * [Claim Purchase](claim-purchase.md)
 * [FiveM Escrow Errors](fivem-escrow-errors.md)
 * [Permissions Troubleshooting](permissions-troubleshooting.md)
 * [Translations](translations.md)
 
-## 🛠️ Mechanic
+## Mechanic
 
 * [Introduction](mechanic/introduction.md)
 * [Installation & Configuration](mechanic/installation-and-configuration/README.md)
@@ -58,7 +58,7 @@
   * [v1.0.2](mechanic/changelog/v1.0.2.md)
   * [v1.0.1](mechanic/changelog/v1.0.1.md)
 
-## 🚘 Dealerships v2 <a href="#dealerships" id="dealerships"></a>
+## Dealerships v2 <a href="#dealerships" id="dealerships"></a>
 
 * [Introduction](dealerships/introduction.md)
 * [Installation & Configuration](dealerships/installation-and-configuration.md)
@@ -106,7 +106,7 @@
   * [v1.0.2](dealerships/changelog/v1.0.2.md)
   * [v1.0.1](dealerships/changelog/v1.0.1.md)
 
-## 🚗 Advanced Garages v3 <a href="#advanced-garages" id="advanced-garages"></a>
+## Advanced Garages v3 <a href="#advanced-garages" id="advanced-garages"></a>
 
 * [Introduction](advanced-garages/introduction.md)
 * [Installation & Configuration](advanced-garages/installation-and-configuration.md)
@@ -184,7 +184,7 @@
   * [v2.0.2](advanced-garages/changelog/v2.0.2.md)
   * [v2.0.1](advanced-garages/changelog/v2.0.1.md)
 
-## ✨ HUD
+## HUD
 
 * [Introduction](hud/introduction.md)
 * [Installation](hud/installation.md)
@@ -195,13 +195,24 @@
   * [Third-Party Seatbelts](hud/integrations/third-party-seatbelts.md)
 * [Exports](hud/exports.md)
 
-## 📊 Handling
+## Handling
 
 * [Introduction](handling/introduction.md)
 * [Installation](handling/installation.md)
 * [Exports](handling/exports.md)
 
-## 🔢 Vehicle Mileage
+## Vehicle Studio
+
+* [Introduction](vehicle-studio/introduction.md)
+* [Installation](vehicle-studio/installation.md)
+* [Image Uploads](vehicle-studio/image-uploads/README.md)
+  * [Local Storage](vehicle-studio/image-uploads/local-storage.md)
+  * [Fivemanage](vehicle-studio/image-uploads/fivemanage.md)
+  * [Cloudflare R2](vehicle-studio/image-uploads/cloudflare-r2.md)
+  * [AWS S3](vehicle-studio/image-uploads/aws-s3.md)
+* [Data Storage](vehicle-studio/data-storage.md)
+
+## Vehicle Mileage
 
 * [Introduction](vehicle-mileage/introduction.md)
 * [Installation](vehicle-mileage/installation.md)
@@ -210,13 +221,8 @@
   * [Client Exports](vehicle-mileage/exports/client-exports.md)
   * [Server Exports](vehicle-mileage/exports/server-exports.md)
 
-## 🎮 Pro Scoreboard
+## Pro Scoreboard (Deprecated) <a href="#pro-scoreboard" id="pro-scoreboard"></a>
 
 * [Introduction](pro-scoreboard/introduction.md)
 * [Installation](pro-scoreboard/installation.md)
 * [Config & Customisation](pro-scoreboard/config-and-customisation.md)
-
-## Advanced Garages v1
-
-* [QB Installation & Config](advanced-garages-v1/qb-installation-and-config.md)
-* [ESX Installation & Config](advanced-garages-v1/esx-installation-and-config.md)
