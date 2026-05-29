@@ -21,6 +21,38 @@ API keys and private provider settings live in `config/config.upload.lua`, which
 3. Fill in the matching provider block in `config/config.upload.lua` if the provider needs private settings.
 4. Restart the resource after changing upload settings.
 
+### Remote Batch Upload Queue
+
+Batch photography can upload remote images concurrently for efficiency.
+
+The queue settings live in `config/config.lua`:
+
+```lua
+Config.RemoteImageUploadQueue = {
+  enabled = true,
+  concurrency = 3,
+  maxPendingUploads = 6,
+  maxAttempts = 5,
+  retryBaseDelayMs = 500,
+  retryMaxDelayMs = 8000,
+}
+```
+
+`concurrency` controls how many remote uploads can run at the same time. `maxPendingUploads` controls how many captured images can be held by the upload queue before the batch runner pauses and waits for uploads to catch up. `maxAttempts` is the total number of tries for each upload phase, so `1` means no retry.
+
+If you are experiencing issues, set the following to make remote batch uploads happen one at a time.
+
+```lua
+Config.RemoteImageUploadQueue = {
+  enabled = true,
+  concurrency = 1,
+  maxPendingUploads = 1,
+  maxAttempts = 1,
+  retryBaseDelayMs = 1,
+  retryMaxDelayMs = 1,
+}
+```
+
 ### General Troubleshooting
 
 #### The Resource Says The Provider Is Missing
