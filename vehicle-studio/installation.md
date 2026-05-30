@@ -1,6 +1,6 @@
 # Installation
 
-## Installation
+### Installation
 
 1. Unzip the `jg-vehiclestudio-bundle`&#x20;
 2. Drag the script folder (`jg-vehiclestudio`) into a new folder called `[jg]` within your server's `resources` folder.
@@ -12,7 +12,7 @@
 ensure [jg]
 ```
 
-## Configuration
+### Configuration
 
 Now for the fun part! Let's get the script perfectly configured for your server. Inside of the `config` folder you will find 2 different configuration files.
 
@@ -21,4 +21,11 @@ The main one is the `config.lua` file; and you don't have to touch this if you w
 * [Image Uploads Docs](image-uploads/)
 * [Data Storage Docs](data-storage.md)
 
-Enjoy!
+### Quick Start
+
+Our quick start guide makes it easy to learn how JG Vehicle Studio works.
+
+{% content-ref url="quick-start.md" %}
+[quick-start.md](quick-start.md)
+{% endcontent-ref %}
+

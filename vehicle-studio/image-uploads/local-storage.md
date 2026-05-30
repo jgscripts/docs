@@ -8,7 +8,7 @@ In `config/config.lua`:
 Config.ImageStorageProvider = "local"
 ```
 
-With local storage, images are saved inside the resource (`/exported_images`) and then served from that folder. No extra settings are required in `config/config.upload.lua`.
+**With local storage, images are saved inside the resource to `/exported_images`**, and then served from that folder. No extra settings are required in `config/config.upload.lua`.
 
 Use this provider if:
 

@@ -205,12 +205,16 @@
 
 * [Introduction](vehicle-studio/introduction.md)
 * [Installation](vehicle-studio/installation.md)
+* [Quick Start](vehicle-studio/quick-start.md)
 * [Image Uploads](vehicle-studio/image-uploads/README.md)
   * [Local Storage](vehicle-studio/image-uploads/local-storage.md)
   * [Fivemanage](vehicle-studio/image-uploads/fivemanage.md)
   * [Cloudflare R2](vehicle-studio/image-uploads/cloudflare-r2.md)
   * [AWS S3](vehicle-studio/image-uploads/aws-s3.md)
 * [Data Storage](vehicle-studio/data-storage.md)
+* [Presets](vehicle-studio/presets.md)
+* [Image Sets](vehicle-studio/image-sets.md)
+* [API](vehicle-studio/api.md)
 
 ## Vehicle Mileage
 

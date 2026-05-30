@@ -44,14 +44,14 @@ In `config/config.lua`:
 Config.DataStorage = "local"
 ```
 
-With local data storage, Vehicle Studio writes JSON data inside the resource.
+With local data storage, Vehicle Studio writes JSON data inside the resource to a folder called `local_data/`.
 
 Typical local data files include:
 
-* `exported_images/index.json`
-* `presets/index.json`
-* `presets/<preset-id>.json`
-* `data/settings.json`
+* `local_data/index.json`
+* `local_data/presets/index.json`
+* `local_data/presets/<preset-id>.json`
+* `local_data/settings.json`
 
 Use local storage if:
 
