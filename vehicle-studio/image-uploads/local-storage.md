@@ -1,6 +1,10 @@
 # Local Storage
 
-Local storage is the default option and does not need any third-party account.
+Local storage saves generated images inside the Vehicle Studio resource folder. It is useful for localhost testing, but it is not the recommended setup for live servers.
+
+{% hint style="danger" %}
+If your server is live and players connect from outside your own machine, use Qbox CDN, Fivemanage, Cloudflare R2, or AWS S3 instead. Local storage will not work out of the box on most live servers.
+{% endhint %}
 
 In `config/config.lua`:
 
@@ -8,63 +12,176 @@ In `config/config.lua`:
 Config.ImageStorageProvider = "local"
 ```
 
-**With local storage, images are saved inside the resource to `/exported_images`**, and then served from that folder. No extra settings are required in `config/config.upload.lua`.
+Images are saved to:
 
-Use this provider if:
+```
+exported_images/
+```
 
-* You want the simplest setup.
-* You are testing the resource locally.
-* You are happy to have extra load on your server for serving vehicle images.
+Vehicle Studio then serves those files through its built-in FiveM HTTP endpoint.
 
-### Built-In HTTP Endpoint
+### When To Use Local Storage
 
-Local storage uses Vehicle Studio's built-in FiveM HTTP endpoint to upload image bytes from the NUI and to serve local gallery images back to the browser.
+Use local storage if:
 
-Vehicle Studio tries to detect the endpoint automatically when the gallery opens. If detection fails, the gallery is blocked and shows an endpoint connection error instead of the normal gallery UI.
+* You are testing Vehicle Studio on localhost.
+* You are developing locally.
+* You are an advanced user and already have a proper HTTPS reverse proxy.
 
-On hosted servers, set `Config.HttpBaseUrl` in `config/config.lua` if automatic detection cannot reach the raw server URL:
+Do not use local storage if:
+
+* Your server is live and you want the simplest reliable setup.
+* You are trying to use a public IP with `http://`.
+* You are trying to use a `users.cfx.re` proxy URL.
+* You do not know what an HTTPS reverse proxy is.
+
+For live servers, choose one of these instead:
+
+```lua
+Config.ImageStorageProvider = "qbox"
+Config.ImageStorageProvider = "fivemanage"
+Config.ImageStorageProvider = "r2"
+Config.ImageStorageProvider = "s3"
+```
+
+### Why Local Storage Fails On Live Servers
+
+Vehicle Studio runs inside the in-game browser. That browser loads the UI from an HTTPS page, for example:
+
+```
+https://cfx-nui-jg-vehiclestudio/web/dist/index.html
+```
+
+When local storage is enabled, the browser must upload image files to the Vehicle Studio HTTP endpoint, for example:
+
+```
+http://123.123.123.123:30120/jg-vehiclestudio/save
+```
+
+Browsers block HTTPS pages from sending requests to plain HTTP public IPs. This is called mixed content blocking.
+
+That means this is not supported for live servers:
 
 ```lua
 Config.HttpBaseUrl = "http://123.123.123.123:30120"
-Config.HttpBaseUrl = "https://server.example.com:30120"
 ```
 
-`Config.HttpBaseUrl` should point to the raw FiveM HTTP server or to your own POST-capable reverse proxy. It should include the scheme and port, but not the resource name.
+`localhost` is treated differently by browsers, which is why this can work for local testing:
 
-Vehicle Studio automatically appends the resource path, for example `/jg-vehiclestudio`.
+```lua
+Config.HttpBaseUrl = "http://localhost:30120"
+```
 
-Rules:
+### Basic Localhost Setup
 
-* Include `http://` or `https://`.
-* Include the port when your server or proxy requires it.
-* Do not include `/jg-vehiclestudio`; the resource path is appended automatically.
-* Do not use the generated `web_baseUrl` / `users.cfx.re` proxy.
+For most local development setups, leave `Config.HttpBaseUrl` empty:
 
-The generated Cfx proxy is heavily rate limited and may block POST requests, so it is not suitable for local storage uploads.
+```lua
+Config.ImageStorageProvider = "local"
+Config.HttpBaseUrl = nil
+```
+
+Vehicle Studio will try to detect the local endpoint automatically.
+
+If automatic detection fails while testing locally, set:
+
+```lua
+Config.HttpBaseUrl = "http://localhost:30120"
+```
+
+Replace `30120` if your server uses a different port.
+
+### Do Not Use The Cfx Proxy
+
+Do not set `Config.HttpBaseUrl` to a generated Cfx proxy URL:
+
+```lua
+Config.HttpBaseUrl = "https://something.users.cfx.re"
+```
+
+That URL may look useful because it uses HTTPS, but it is not suitable for image uploads. The Cfx proxy is rate limited and is not designed for large POST upload traffic.
+
+### Advanced Live Server Setup
+
+Only use local storage on a live server if you can provide your own HTTPS reverse proxy.
+
+Example:
+
+```lua
+Config.ImageStorageProvider = "local"
+Config.HttpBaseUrl = "https://images.example.com"
+```
+
+Do not include the resource name in `Config.HttpBaseUrl`. Vehicle Studio adds it automatically.
+
+So this is correct:
+
+```lua
+Config.HttpBaseUrl = "https://images.example.com"
+```
+
+This is not correct:
+
+```lua
+Config.HttpBaseUrl = "https://images.example.com/jg-vehiclestudio"
+```
+
+Your proxy must forward requests like these to the FiveM resource HTTP API:
+
+```
+https://images.example.com/jg-vehiclestudio/health
+https://images.example.com/jg-vehiclestudio/save
+https://images.example.com/jg-vehiclestudio/image/adorned.webp
+```
+
+The proxy must:
+
+* Use HTTPS with a valid certificate.
+* Allow `GET`, `POST`, `DELETE`, and `OPTIONS`.
+* Allow large enough POST bodies for image uploads.
+* Avoid strict rate limits that would break batch photography.
+* Forward headers such as `Content-Type`, `X-Vehicle-Model`, `X-Image-Format`, `X-Image-Id`, and `X-Preset-Id`.
+* Return valid CORS headers.
+
+If this list does not make sense, do not use local storage on a live server. Use a remote provider instead.
 
 ### Troubleshooting
 
-#### Vehicle Studio Says It Cannot Connect To The Server
+**Vehicle Studio Says It Cannot Connect To The Server**
 
-This message comes from the local HTTP endpoint health check.
+This comes from the local HTTP endpoint health check.
 
-Check:
+If you are on a live server, the simplest fix is to stop using local storage and switch to Qbox CDN, Fivemanage, R2, or S3.
+
+If you are testing locally, check:
 
 * `Config.ImageStorageProvider` is set to `"local"`.
-* `Config.HttpBaseUrl` points to the raw server URL or your own POST-capable proxy.
-* The URL includes the correct scheme and port.
-* The URL does not include the resource path.
-* You are not using the generated `users.cfx.re` `web_baseUrl` proxy.
+* `Config.HttpBaseUrl` is empty or points to `http://localhost:30120`.
+* The port matches your FiveM server port.
+* The resource was restarted after changing config.
 
-#### Browser Console Shows A CORS Error
+**Browser Console Shows Mixed Content**
 
-A local storage CORS or connection failure usually means `Config.HttpBaseUrl` is missing, points to the wrong host, or points to a proxy that does not allow POST requests.
+You are using a plain HTTP public IP. The browser blocks this before Vehicle Studio receives the request.
 
-#### Local Images Do Not Load
+Use a remote provider or put local storage behind a real HTTPS reverse proxy.
+
+**Browser Console Shows A CORS Error**
+
+For local storage, this usually means `Config.HttpBaseUrl` points to the wrong place or your reverse proxy is not handling CORS correctly.
 
 Check that:
 
-* The resource was restarted after changing `Config.HttpBaseUrl`.
-* The configured URL can be reached from the same machine running the game client.
-* The server firewall allows access to the selected port.
+* The URL does not include `/jg-vehiclestudio`.
+* The URL is reachable from the game client.
+* The proxy allows upload POST requests.
+* The proxy returns valid CORS headers.
+
+**Local Images Do Not Load**
+
+Check that:
+
+* Files are being written to `exported_images/`.
+* The configured URL can be reached from the game client.
+* The server firewall allows access to the selected port or proxy.
 * Any reverse proxy forwards requests to the FiveM HTTP server.

@@ -211,6 +211,7 @@
   * [Fivemanage](vehicle-studio/image-uploads/fivemanage.md)
   * [Cloudflare R2](vehicle-studio/image-uploads/cloudflare-r2.md)
   * [AWS S3](vehicle-studio/image-uploads/aws-s3.md)
+  * [Qbox CDN](vehicle-studio/image-uploads/qbox-cdn.md)
 * [Data Storage](vehicle-studio/data-storage.md)
 * [Presets](vehicle-studio/presets.md)
 * [Image Sets](vehicle-studio/image-sets.md)
