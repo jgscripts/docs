@@ -103,7 +103,9 @@ That URL may look useful because it uses HTTPS, but it is not suitable for image
 
 ### Advanced Live Server Setup
 
-Only use local storage on a live server if you can provide your own HTTPS reverse proxy.
+Only use local storage on a live server if you can provide your own HTTPS reverse proxy. There is an extensive guide in the Cfx.re documentation on how to do this:
+
+{% embed url="https://docs.fivem.net/docs/server-manual/proxy-setup/" %}
 
 Example:
 
